@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japer Technology Public Fabric</title>
+    <meta
+      name="description"
+      content="A GitHub Pages overview of the public repositories published by Japer Technology."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <p class="eyebrow">Public Fabric</p>
+        <h1>Japer Technology GitHub Overview</h1>
+        <p class="hero-copy" id="hero-copy">
+          A living catalog of public repositories published by Japer Technology.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/japer-technology" target="_blank" rel="noreferrer">
+            View organization
+          </a>
+          <a class="button secondary" href="#catalog">
+            Browse repositories
+          </a>
+        </div>
+        <dl class="stats" id="stats">
+          <div class="stat-card">
+            <dt>Repositories</dt>
+            <dd id="stat-repos">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>Languages</dt>
+            <dd id="stat-languages">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>Total stars</dt>
+            <dd id="stat-stars">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>Data source</dt>
+            <dd id="stat-source">Loading…</dd>
+          </div>
+        </dl>
+      </header>
+
+      <main>
+        <section class="panel intro-panel">
+          <div>
+            <h2>What this site is for</h2>
+            <p id="intro-copy">
+              This public fabric is meant to become the durable front door for every public Japer Technology repository.
+            </p>
+          </div>
+          <div class="callout">
+            <strong>Maintenance model</strong>
+            <p>
+              The page renders from a local snapshot first, then upgrades to live GitHub data when the API is available.
+              Curated summaries and featured repositories live in <code>data/site.json</code>.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel" id="featured-section">
+          <div class="section-heading">
+            <h2>Featured repositories</h2>
+            <p>Pin the most important repos here so visitors can orient themselves quickly.</p>
+          </div>
+          <div class="repo-grid featured-grid" id="featured-grid"></div>
+        </section>
+
+        <section class="panel" id="catalog">
+          <div class="section-heading">
+            <h2>Repository catalog</h2>
+            <p>Search, filter by language, and open each repository or homepage directly.</p>
+          </div>
+
+          <div class="filters">
+            <label class="field">
+              <span>Search</span>
+              <input id="search-input" type="search" placeholder="Search by repo name, summary, topic, or tag" />
+            </label>
+
+            <label class="field compact">
+              <span>Language</span>
+              <select id="language-filter">
+                <option value="all">All languages</option>
+              </select>
+            </label>
+          </div>
+
+          <p class="results-summary" id="results-summary">Loading repositories…</p>
+          <div class="repo-grid" id="repo-grid"></div>
+          <div class="empty-state hidden" id="empty-state">
+            <h3>No repositories match this filter</h3>
+            <p>Try clearing the search box or switching back to all languages.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Built from <code>.github-minimum-intelligence/public-fabric</code> and deployed by GitHub Actions.
+        </p>
+        <p>
+          To curate this catalog, edit <code>data/site.json</code> and push to <code>main</code>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

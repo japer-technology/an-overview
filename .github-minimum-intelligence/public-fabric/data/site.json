@@ -1,0 +1,53 @@
+{
+  "org": "japer-technology",
+  "title": "Japer Technology Public Fabric",
+  "tagline": "A living catalog of the public repositories published by Japer Technology.",
+  "intro": "This site is the GitHub Pages front door for the Japer Technology public repo ecosystem. It is designed to show every public repository, while still allowing hand-written summaries for the repos that matter most.",
+  "featured": [
+    "an-overview",
+    "github-minimum-intelligence",
+    "japer-technology.github.io",
+    "developer-japer-io"
+  ],
+  "repoOverrides": {
+    "an-overview": {
+      "summary": "This repository powers the public fabric itself and is intended to become the maintained overview of every public Japer Technology repository.",
+      "status": "active",
+      "featured": true,
+      "tags": ["catalog", "github-pages"]
+    },
+    "github-minimum-intelligence": {
+      "summary": "A repo-local AI framework that uses GitHub Issues, Git, and GitHub Actions as the conversation, memory, and execution layer.",
+      "status": "featured",
+      "featured": true,
+      "tags": ["ai", "automation", "github-actions"]
+    },
+    "japer-technology.github.io": {
+      "summary": "The main GitHub Pages website for Japer Technology.",
+      "status": "active",
+      "featured": true,
+      "tags": ["website"]
+    },
+    "developer-japer-io": {
+      "summary": "Developer-facing documentation and platform entry point for the JAPER API and related secure services.",
+      "status": "active",
+      "featured": true,
+      "tags": ["developer-portal", "product"]
+    },
+    "github-fabric": {
+      "summary": "An in-progress repository focused on fabric-style publishing and GitHub-native delivery.",
+      "status": "experimental",
+      "tags": ["fabric"]
+    },
+    "github-openclaw-intelligence": {
+      "summary": "A GitHub-native intelligence variant built around OpenClaw-oriented workflows.",
+      "status": "active",
+      "tags": ["openclaw", "automation"]
+    },
+    "github-agenticana-intelligence": {
+      "summary": "A GitHub-native intelligence variant oriented around Agenticana workflows and experimentation.",
+      "status": "active",
+      "tags": ["agenticana", "automation"]
+    }
+  }
+}
