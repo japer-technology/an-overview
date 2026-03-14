@@ -1,5 +1,5 @@
 # ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║  GitHub Minimum Intelligence — Agent Workflow (Version 1.0.5)                ║
+# ║  GitHub Minimum Intelligence — Agent Workflow (Version 1.0.6)                ║
 # ║                                                                              ║
 # ║  An AI agent that lives inside your GitHub repository. It uses Issues as     ║
 # ║  a conversational UI, Git for persistent memory, and Actions as its only     ║
@@ -420,17 +420,16 @@ jobs:
   # Purpose : Publish the agent's public-fabric directory as a GitHub Pages
   #           site. This gives you a live web page powered by the agent's
   #           public output — no separate hosting needed.
-  # Trigger : Runs after every event — on direct pushes to main, after the
-  #           agent commits (run-agent), or after the installer (run-install).
-  #           Commits made by GITHUB_TOKEN do not fire new push events, so
-  #           this job must also run after the agent/install jobs complete.
+  # Trigger : push to main (i.e. after the agent commits, or any manual push).
   # Note    : Pages is automatically enabled on first run. If auto-enable
   #           fails, a warning guides the user to enable it manually.
   # ────────────────────────────────────────────────────────────────────────────
   run-gitpages:
-    # Wait for agent/install jobs to finish (they may push public-fabric
-    # content). On push events both are skipped, so this runs immediately.
+    # Run after agent/install jobs finish. On push events those jobs are
+    # skipped so run-gitpages starts immediately.
     needs: [run-agent, run-install]
+    # always() ensures the job runs even when upstream jobs are skipped;
+    # !cancelled() still respects manual cancellation.
     if: always() && !cancelled()
     runs-on: ubuntu-latest
 
@@ -447,6 +446,7 @@ jobs:
 
     steps:
       # 1. Check out the repo so we can read the public-fabric directory.
+      #    ref: main ensures we pick up any commits the agent just pushed.
       - name: Checkout
         uses: actions/checkout@v6
         with:
