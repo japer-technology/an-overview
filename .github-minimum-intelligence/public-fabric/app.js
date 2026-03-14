@@ -47,6 +47,8 @@ bootstrap().catch((error) => {
 });
 
 async function bootstrap() {
+  elements.repoGrid.setAttribute('aria-busy', 'true');
+
   const [config, snapshot] = await Promise.all([
     loadJson('./data/site.json'),
     loadJson('./data/repos-snapshot.json'),
@@ -61,6 +63,7 @@ async function bootstrap() {
   populateLanguageOptions();
   updatePortfolioMetrics();
   render();
+  elements.repoGrid.removeAttribute('aria-busy');
 
   try {
     const liveRepos = await fetchLiveRepos(config.org);

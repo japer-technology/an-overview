@@ -21,6 +21,29 @@
   box-sizing: border-box;
 }
 
+/* Accessibility: skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  border-radius: 0 0 12px 12px;
+  background: var(--accent);
+  color: #04101d;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(141, 194, 255, 0.3);
+  color: var(--text);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -482,6 +505,12 @@ select:focus,
   margin-top: 1.5rem;
   text-align: center;
   font-size: 0.95rem;
+}
+
+.footer .copyright {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  opacity: 0.6;
 }
 
 code {
