@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japer Technology Public Fabric</title>
+    <meta
+      name="description"
+      content="A polished GitHub Pages overview of the public repositories published by Japer Technology."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <div class="hero-topline">
+          <p class="eyebrow">Public Fabric</p>
+          <span class="live-pill" id="live-pill">Loading catalog…</span>
+        </div>
+
+        <h1 id="site-title">Japer Technology Public Fabric</h1>
+        <p class="hero-copy" id="hero-copy">
+          A living catalog of public repositories published by Japer Technology.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/japer-technology" target="_blank" rel="noreferrer">
+            View organization
+          </a>
+          <a class="button secondary" href="#catalog">
+            Browse repositories
+          </a>
+        </div>
+
+        <dl class="stats">
+          <div class="stat-card">
+            <dt>Repositories</dt>
+            <dd id="stat-repos">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>First-party</dt>
+            <dd id="stat-first-party">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>Forks tracked</dt>
+            <dd id="stat-forks">—</dd>
+          </div>
+          <div class="stat-card">
+            <dt>Data source</dt>
+            <dd id="stat-source">Loading…</dd>
+          </div>
+        </dl>
+      </header>
+
+      <main>
+        <section class="panel intro-panel">
+          <div class="intro-copy-block">
+            <h2>What this site is for</h2>
+            <p id="intro-copy">
+              This public fabric is meant to become the durable front door for every public Japer Technology repository.
+            </p>
+
+            <div class="legend-row" aria-label="Repository status legend">
+              <span class="badge status-active">Active</span>
+              <span class="badge status-featured">Featured</span>
+              <span class="badge status-experimental">Experimental</span>
+              <span class="badge status-watch">Watching</span>
+              <span class="badge status-archived">Archived</span>
+            </div>
+          </div>
+
+          <aside class="callout">
+            <strong>Maintenance model</strong>
+            <p>
+              The page renders from a local snapshot first, then upgrades to live GitHub data when the API is available.
+              Curated summaries and featured repositories live in <code>data/site.json</code>.
+            </p>
+          </aside>
+        </section>
+
+        <section class="panel snapshot-panel">
+          <div class="section-heading">
+            <h2>Portfolio snapshot</h2>
+            <p>Quick signals for the public repo portfolio, useful before you dive into the full catalog.</p>
+          </div>
+
+          <div class="snapshot-grid">
+            <article class="snapshot-card">
+              <h3>Featured</h3>
+              <p class="snapshot-value" id="snapshot-featured">—</p>
+              <p class="snapshot-copy">Curated repositories prioritized on the page.</p>
+            </article>
+            <article class="snapshot-card">
+              <h3>Experimental</h3>
+              <p class="snapshot-value" id="snapshot-experimental">—</p>
+              <p class="snapshot-copy">Repositories currently marked as in-progress or in transition.</p>
+            </article>
+            <article class="snapshot-card">
+              <h3>Languages</h3>
+              <p class="snapshot-value" id="snapshot-languages">—</p>
+              <p class="snapshot-copy">Unique implementation languages detected from the repository metadata.</p>
+            </article>
+            <article class="snapshot-card">
+              <h3>Total stars</h3>
+              <p class="snapshot-value" id="snapshot-stars">—</p>
+              <p class="snapshot-copy">Combined public star count across the tracked repositories.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="featured-section">
+          <div class="section-heading">
+            <h2>Featured repositories</h2>
+            <p>Start here if you want the shortest path to the most important public work.</p>
+          </div>
+          <div class="repo-grid featured-grid" id="featured-grid"></div>
+        </section>
+
+        <section class="panel" id="catalog">
+          <div class="section-heading">
+            <h2>Repository catalog</h2>
+            <p>Search, filter, and sort the full public fabric.</p>
+          </div>
+
+          <div class="filters">
+            <label class="field field-search">
+              <span>Search</span>
+              <input id="search-input" type="search" placeholder="Search by repo name, summary, topic, or tag" />
+            </label>
+
+            <label class="field compact">
+              <span>Language</span>
+              <select id="language-filter">
+                <option value="all">All languages</option>
+              </select>
+            </label>
+
+            <label class="field compact">
+              <span>Scope</span>
+              <select id="scope-filter">
+                <option value="all">All repositories</option>
+                <option value="first-party">First-party</option>
+                <option value="forks">Forks only</option>
+                <option value="featured">Featured only</option>
+                <option value="experimental">Experimental only</option>
+              </select>
+            </label>
+
+            <label class="field compact">
+              <span>Sort</span>
+              <select id="sort-filter">
+                <option value="updated-desc">Recently updated</option>
+                <option value="stars-desc">Most stars</option>
+                <option value="name-asc">Name A–Z</option>
+              </select>
+            </label>
+
+            <div class="field action-field">
+              <span>Reset</span>
+              <button class="button tertiary" id="reset-filters" type="button">Clear filters</button>
+            </div>
+          </div>
+
+          <p class="results-summary" id="results-summary" aria-live="polite">Loading repositories…</p>
+          <div class="active-filters hidden" id="active-filters" aria-live="polite"></div>
+          <div class="repo-grid" id="repo-grid"></div>
+          <div class="empty-state hidden" id="empty-state">
+            <h3>No repositories match this filter</h3>
+            <p>Try clearing the search box, switching back to all languages, or widening the scope.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Built from <code>.github-minimum-intelligence/public-fabric</code> and deployed by GitHub Actions.
+        </p>
+        <p>
+          Curate summaries in <code>data/site.json</code>, then push to <code>main</code> to redeploy.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
