@@ -420,13 +420,18 @@ jobs:
   # Purpose : Publish the agent's public-fabric directory as a GitHub Pages
   #           site. This gives you a live web page powered by the agent's
   #           public output — no separate hosting needed.
-  # Trigger : push to main (i.e. after the agent commits, or any manual push).
+  # Trigger : Runs after every event — on direct pushes to main, after the
+  #           agent commits (run-agent), or after the installer (run-install).
+  #           Commits made by GITHUB_TOKEN do not fire new push events, so
+  #           this job must also run after the agent/install jobs complete.
   # Note    : Pages is automatically enabled on first run. If auto-enable
   #           fails, a warning guides the user to enable it manually.
   # ────────────────────────────────────────────────────────────────────────────
   run-gitpages:
-    # Only run on pushes to main — not on issues or manual dispatch.
-    if: github.event_name == 'push'
+    # Wait for agent/install jobs to finish (they may push public-fabric
+    # content). On push events both are skipped, so this runs immediately.
+    needs: [run-agent, run-install]
+    if: always() && !cancelled()
     runs-on: ubuntu-latest
 
     # Concurrency: only one Pages deployment at a time across the entire repo.
@@ -444,6 +449,8 @@ jobs:
       # 1. Check out the repo so we can read the public-fabric directory.
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       # 2. Verify the public-fabric directory exists. If the agent has not
       #    been installed yet (e.g. on a fresh template repo) there is nothing
