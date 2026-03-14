@@ -420,7 +420,10 @@ jobs:
   # Purpose : Publish the agent's public-fabric directory as a GitHub Pages
   #           site. This gives you a live web page powered by the agent's
   #           public output — no separate hosting needed.
-  # Trigger : push to main (i.e. after the agent commits, or any manual push).
+  # Trigger : Runs after every event (push, issues, issue_comment,
+  #           workflow_dispatch). Commits made by GITHUB_TOKEN do not fire
+  #           new push events, so this job must also run after the
+  #           agent/install jobs complete — not only on push.
   # Note    : Pages is automatically enabled on first run. If auto-enable
   #           fails, a warning guides the user to enable it manually.
   # ────────────────────────────────────────────────────────────────────────────
