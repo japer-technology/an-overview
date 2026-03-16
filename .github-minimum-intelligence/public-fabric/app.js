@@ -1,7 +1,7 @@
 /* ── Repository group definitions ──────────────────────────────────── */
 
 const REPO_GROUPS = [
-  { key: 'hidden', label: 'Hidden', description: '', match: (n) => n.startsWith('zzz') },
+  { key: 'hidden', label: 'Hidden', description: 'Repositories excluded from the public catalog.', match: (n) => n.startsWith('zzz') },
   { key: 'this-repo', label: 'This Repository', description: 'The repository that powers this public fabric site.', match: (n) => n === 'an-overview' },
   { key: 'japer', label: 'JAPER Technology', description: 'Augmenting japer.technology, japer.cloud, and japer.xyz.', match: (n) => n.includes('japer') },
   { key: 'intelligence', label: 'GitHub Intelligence', description: 'Local AI Agents running in repos.', match: (n) => n.startsWith('github') && n.includes('intelligence') },
@@ -33,6 +33,8 @@ const DEFAULT_FILTERS = {
 
 const VALID_SCOPE_VALUES = new Set(['all', 'first-party', 'forks', 'featured', 'experimental']);
 const VALID_SORT_VALUES = new Set(['updated-desc', 'stars-desc', 'name-asc']);
+/* Max concurrent GitHub API calls when resolving fork parent info.
+   Kept low to stay well within unauthenticated rate limits (60 req/hr). */
 const PARENT_FETCH_CONCURRENCY = 5;
 
 /* ── App state ─────────────────────────────────────────────────────── */
@@ -471,7 +473,7 @@ function repoCard(repo, featuredContext) {
 function getPagesUrl(repo) {
   if (repo.homepage && repo.homepage.includes('github.io')) return repo.homepage;
   if (repo.has_pages) {
-    if (repo.name.endsWith('.github.io')) return repo.homepage || `https://${repo.name}/`;
+    if (repo.name.endsWith('.github.io')) return repo.homepage || `https://${repo.name}`;
     return repo.homepage || `https://${state.config.org}.github.io/${repo.name}/`;
   }
   return '';
@@ -491,7 +493,7 @@ function badge(text, extraClass = '') {
 
 function normalizeRepos(repos, overrides) {
   return [...repos]
-    .filter((repo) => !repo.name.toLowerCase().startsWith('zzz'))
+    .filter((repo) => categorizeRepo(repo.name) !== 'hidden')
     .map((repo) => {
       const override = overrides[repo.name] || {};
       const isFeatured = Boolean(override.featured || (state.config.featured || []).includes(repo.name));
