@@ -5,6 +5,9 @@ const DEFAULT_FILTERS = {
   sort: 'updated-desc',
 };
 
+const VALID_SCOPE_VALUES = new Set(['all', 'first-party', 'forks', 'featured', 'experimental']);
+const VALID_SORT_VALUES = new Set(['updated-desc', 'stars-desc', 'name-asc']);
+
 const state = {
   config: null,
   repos: [],
@@ -40,6 +43,7 @@ const elements = {
 
 bootstrap().catch((error) => {
   console.error(error);
+  elements.repoGrid.removeAttribute('aria-busy');
   elements.resultsSummary.textContent = 'Unable to load repository data right now.';
   elements.statSource.textContent = 'Unavailable';
   elements.livePill.textContent = 'Catalog unavailable';
@@ -57,6 +61,7 @@ async function bootstrap() {
   state.config = config;
   applyConfigCopy();
   wireEvents();
+  loadFiltersFromUrl();
 
   state.repos = normalizeRepos(snapshot, config.repoOverrides || {});
   state.sourceLabel = 'Snapshot fallback';
@@ -117,6 +122,37 @@ function applyConfigCopy() {
   elements.introCopy.textContent =
     state.config.intro ||
     'This public fabric is meant to become the durable front door for every public Japer Technology repository.';
+}
+
+function loadFiltersFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const search = (params.get('q') || '').trim();
+  const language = params.get('language') || 'all';
+  const scope = params.get('scope') || 'all';
+  const sort = params.get('sort') || DEFAULT_FILTERS.sort;
+
+  state.filters.search = search.toLowerCase();
+  state.filters.language = language;
+  state.filters.scope = VALID_SCOPE_VALUES.has(scope) ? scope : 'all';
+  state.filters.sort = VALID_SORT_VALUES.has(sort) ? sort : DEFAULT_FILTERS.sort;
+
+  elements.searchInput.value = search;
+  elements.scopeFilter.value = state.filters.scope;
+  elements.sortFilter.value = state.filters.sort;
+}
+
+function syncFiltersToUrl() {
+  const params = new URLSearchParams();
+  const search = elements.searchInput.value.trim();
+
+  if (search) params.set('q', search);
+  if (state.filters.language !== 'all') params.set('language', state.filters.language);
+  if (state.filters.scope !== 'all') params.set('scope', state.filters.scope);
+  if (state.filters.sort !== DEFAULT_FILTERS.sort) params.set('sort', state.filters.sort);
+
+  const nextQuery = params.toString();
+  const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ''}${window.location.hash}`;
+  window.history.replaceState({}, '', nextUrl);
 }
 
 function updatePortfolioMetrics() {
@@ -181,6 +217,7 @@ function render() {
 
   elements.resultsSummary.textContent = `${summaryParts.join(' · ')}.`;
   elements.emptyState.classList.toggle('hidden', filteredRepos.length !== 0);
+  syncFiltersToUrl();
 }
 
 function renderFeatured(repos) {
