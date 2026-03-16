@@ -148,6 +148,13 @@
             </label>
 
             <label class="field compact">
+              <span>Group</span>
+              <select id="group-filter">
+                <option value="all">All groups</option>
+              </select>
+            </label>
+
+            <label class="field compact">
               <span>Scope</span>
               <select id="scope-filter">
                 <option value="all">All repositories</option>
@@ -175,7 +182,7 @@
 
           <p class="results-summary" id="results-summary" aria-live="polite">Loading repositories…</p>
           <div class="active-filters hidden" id="active-filters" aria-live="polite"></div>
-          <div class="repo-grid" id="repo-grid"></div>
+          <div class="catalog-container" id="repo-grid"></div>
           <div class="empty-state hidden" id="empty-state">
             <h3>No repositories match this filter</h3>
             <p>Try clearing the search box, switching back to all languages, or widening the scope.</p>

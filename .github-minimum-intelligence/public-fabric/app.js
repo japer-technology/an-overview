@@ -1,12 +1,41 @@
+/* ── Repository group definitions ──────────────────────────────────── */
+
+const REPO_GROUPS = [
+  { key: 'hidden', label: 'Hidden', description: '', match: (n) => n.startsWith('zzz') },
+  { key: 'this-repo', label: 'This Repository', description: 'The repository that powers this public fabric site.', match: (n) => n === 'an-overview' },
+  { key: 'japer', label: 'JAPER Technology', description: 'Augmenting japer.technology, japer.cloud, and japer.xyz.', match: (n) => n.includes('japer') },
+  { key: 'intelligence', label: 'GitHub Intelligence', description: 'Local AI Agents running in repos.', match: (n) => n.startsWith('github') && n.includes('intelligence') },
+  { key: 'fabric', label: 'GitHub Fabric', description: 'Local execution in repo space.', match: (n) => n.startsWith('github-fabric') },
+  { key: 'githubification', label: 'GitHubification', description: 'Local execution in repo space via GitHubification forks.', match: (n) => n.startsWith('githubification') },
+  { key: 'gmi', label: 'GitHub Minimum Intelligences', description: 'GMI instances running various LLM models.', match: (n) => n.startsWith('gmi-') },
+  { key: 'rnd', label: 'Research & Development', description: 'Experimental and research projects.', match: () => true },
+];
+
+const VISIBLE_GROUPS = REPO_GROUPS.filter((g) => g.key !== 'hidden');
+
+function categorizeRepo(name) {
+  const n = name.toLowerCase();
+  for (const group of REPO_GROUPS) {
+    if (group.match(n)) return group.key;
+  }
+  return 'rnd';
+}
+
+/* ── Defaults ──────────────────────────────────────────────────────── */
+
 const DEFAULT_FILTERS = {
   search: '',
   language: 'all',
+  group: 'all',
   scope: 'all',
   sort: 'updated-desc',
 };
 
 const VALID_SCOPE_VALUES = new Set(['all', 'first-party', 'forks', 'featured', 'experimental']);
 const VALID_SORT_VALUES = new Set(['updated-desc', 'stars-desc', 'name-asc']);
+const PARENT_FETCH_CONCURRENCY = 5;
+
+/* ── App state ─────────────────────────────────────────────────────── */
 
 const state = {
   config: null,
@@ -14,6 +43,8 @@ const state = {
   sourceLabel: 'Snapshot fallback',
   filters: { ...DEFAULT_FILTERS },
 };
+
+/* ── DOM handles ───────────────────────────────────────────────────── */
 
 const elements = {
   siteTitle: document.getElementById('site-title'),
@@ -23,6 +54,7 @@ const elements = {
   featuredGrid: document.getElementById('featured-grid'),
   repoGrid: document.getElementById('repo-grid'),
   languageFilter: document.getElementById('language-filter'),
+  groupFilter: document.getElementById('group-filter'),
   scopeFilter: document.getElementById('scope-filter'),
   sortFilter: document.getElementById('sort-filter'),
   searchInput: document.getElementById('search-input'),
@@ -40,6 +72,8 @@ const elements = {
   snapshotLanguages: document.getElementById('snapshot-languages'),
   snapshotStars: document.getElementById('snapshot-stars'),
 };
+
+/* ── Bootstrap ─────────────────────────────────────────────────────── */
 
 bootstrap().catch((error) => {
   console.error(error);
@@ -66,6 +100,7 @@ async function bootstrap() {
   state.repos = normalizeRepos(snapshot, config.repoOverrides || {});
   state.sourceLabel = 'Snapshot fallback';
   populateLanguageOptions();
+  populateGroupOptions();
   updatePortfolioMetrics();
   render();
   elements.repoGrid.removeAttribute('aria-busy');
@@ -75,12 +110,19 @@ async function bootstrap() {
     state.repos = normalizeRepos(liveRepos, config.repoOverrides || {});
     state.sourceLabel = 'Live GitHub API';
     populateLanguageOptions();
+    populateGroupOptions();
     updatePortfolioMetrics();
     render();
+
+    fetchParentInfo(state.repos, config.org)
+      .then(() => render())
+      .catch((err) => console.warn('Parent info fetch incomplete:', err));
   } catch (error) {
     console.warn('Using snapshot fallback:', error);
   }
 }
+
+/* ── Event wiring ──────────────────────────────────────────────────── */
 
 function wireEvents() {
   elements.searchInput.addEventListener('input', (event) => {
@@ -90,6 +132,11 @@ function wireEvents() {
 
   elements.languageFilter.addEventListener('change', (event) => {
     state.filters.language = event.target.value;
+    render();
+  });
+
+  elements.groupFilter.addEventListener('change', (event) => {
+    state.filters.group = event.target.value;
     render();
   });
 
@@ -107,11 +154,14 @@ function wireEvents() {
     state.filters = { ...DEFAULT_FILTERS };
     elements.searchInput.value = '';
     elements.languageFilter.value = 'all';
+    elements.groupFilter.value = 'all';
     elements.scopeFilter.value = 'all';
     elements.sortFilter.value = 'updated-desc';
     render();
   });
 }
+
+/* ── Config-driven copy ────────────────────────────────────────────── */
 
 function applyConfigCopy() {
   document.title = state.config.title || 'Public Fabric';
@@ -124,19 +174,25 @@ function applyConfigCopy() {
     'This public fabric is meant to become the durable front door for every public Japer Technology repository.';
 }
 
+/* ── URL sync ──────────────────────────────────────────────────────── */
+
 function loadFiltersFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const search = (params.get('q') || '').trim();
   const language = params.get('language') || 'all';
+  const group = params.get('group') || 'all';
   const scope = params.get('scope') || 'all';
   const sort = params.get('sort') || DEFAULT_FILTERS.sort;
 
+  const validGroupKeys = new Set(VISIBLE_GROUPS.map((g) => g.key));
   state.filters.search = search.toLowerCase();
   state.filters.language = language;
+  state.filters.group = group === 'all' || validGroupKeys.has(group) ? group : 'all';
   state.filters.scope = VALID_SCOPE_VALUES.has(scope) ? scope : 'all';
   state.filters.sort = VALID_SORT_VALUES.has(sort) ? sort : DEFAULT_FILTERS.sort;
 
   elements.searchInput.value = search;
+  elements.groupFilter.value = state.filters.group;
   elements.scopeFilter.value = state.filters.scope;
   elements.sortFilter.value = state.filters.sort;
 }
@@ -147,6 +203,7 @@ function syncFiltersToUrl() {
 
   if (search) params.set('q', search);
   if (state.filters.language !== 'all') params.set('language', state.filters.language);
+  if (state.filters.group !== 'all') params.set('group', state.filters.group);
   if (state.filters.scope !== 'all') params.set('scope', state.filters.scope);
   if (state.filters.sort !== DEFAULT_FILTERS.sort) params.set('sort', state.filters.sort);
 
@@ -154,6 +211,8 @@ function syncFiltersToUrl() {
   const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ''}${window.location.hash}`;
   window.history.replaceState({}, '', nextUrl);
 }
+
+/* ── Metrics ───────────────────────────────────────────────────────── */
 
 function updatePortfolioMetrics() {
   const repos = state.repos;
@@ -169,7 +228,7 @@ function updatePortfolioMetrics() {
   elements.statFirstParty.textContent = String(firstPartyCount);
   elements.statForks.textContent = String(forkCount);
   elements.statSource.textContent = latestUpdate
-    ? `${state.sourceLabel} · ${formatDate(latestUpdate)}`
+    ? `${state.sourceLabel} \u00b7 ${formatDate(latestUpdate)}`
     : state.sourceLabel;
 
   elements.snapshotFeatured.textContent = String(featuredCount);
@@ -181,6 +240,8 @@ function updatePortfolioMetrics() {
   elements.livePill.textContent = isLive ? 'Live GitHub data' : 'Snapshot fallback';
   elements.livePill.className = `live-pill ${isLive ? 'is-live' : 'is-fallback'}`;
 }
+
+/* ── Populate filter dropdowns ─────────────────────────────────────── */
 
 function populateLanguageOptions() {
   const previousValue = state.filters.language;
@@ -201,6 +262,27 @@ function populateLanguageOptions() {
   elements.languageFilter.value = nextValue;
 }
 
+function populateGroupOptions() {
+  const previousValue = state.filters.group;
+
+  elements.groupFilter.innerHTML = '<option value="all">All groups</option>';
+  for (const group of VISIBLE_GROUPS) {
+    const count = state.repos.filter((r) => r.group === group.key).length;
+    if (count === 0) continue;
+    const option = document.createElement('option');
+    option.value = group.key;
+    option.textContent = `${group.label} (${count})`;
+    elements.groupFilter.appendChild(option);
+  }
+
+  const validGroupKeys = new Set(VISIBLE_GROUPS.map((g) => g.key));
+  const nextValue = previousValue === 'all' || validGroupKeys.has(previousValue) ? previousValue : 'all';
+  state.filters.group = nextValue;
+  elements.groupFilter.value = nextValue;
+}
+
+/* ── Render pipeline ───────────────────────────────────────────────── */
+
 function render() {
   const featuredRepos = getFeaturedRepos();
   const filteredRepos = getFilteredRepos();
@@ -211,11 +293,12 @@ function render() {
 
   const searchLabel = elements.searchInput.value.trim();
   const summaryParts = [`Showing ${filteredRepos.length} of ${state.repos.length} repositories`];
+  if (state.filters.group !== 'all') summaryParts.push(`group: ${labelForGroup(state.filters.group)}`);
   if (state.filters.scope !== 'all') summaryParts.push(`scope: ${labelForScope(state.filters.scope)}`);
   if (state.filters.language !== 'all') summaryParts.push(`language: ${state.filters.language}`);
-  if (state.filters.search) summaryParts.push(`search: “${searchLabel}”`);
+  if (state.filters.search) summaryParts.push(`search: "${searchLabel}"`);
 
-  elements.resultsSummary.textContent = `${summaryParts.join(' · ')}.`;
+  elements.resultsSummary.textContent = `${summaryParts.join(' \u00b7 ')}.`;
   elements.emptyState.classList.toggle('hidden', filteredRepos.length !== 0);
   syncFiltersToUrl();
 }
@@ -226,19 +309,52 @@ function renderFeatured(repos) {
 }
 
 function renderCatalog(repos) {
-  elements.repoGrid.innerHTML = repos.map((repo) => repoCard(repo, false)).join('');
+  const grouped = new Map();
+  for (const group of VISIBLE_GROUPS) {
+    grouped.set(group.key, []);
+  }
+  for (const repo of repos) {
+    const list = grouped.get(repo.group);
+    if (list) list.push(repo);
+  }
+
+  let html = '';
+  for (const group of VISIBLE_GROUPS) {
+    const groupRepos = grouped.get(group.key);
+    if (!groupRepos || groupRepos.length === 0) continue;
+
+    html += `
+      <section class="group-section" id="group-${escapeHtml(group.key)}">
+        <div class="group-header">
+          <div class="group-header-text">
+            <h3>${escapeHtml(group.label)}</h3>
+            <p>${escapeHtml(group.description)}</p>
+          </div>
+          <span class="group-count">${groupRepos.length} repo${groupRepos.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="repo-grid">
+          ${groupRepos.map((repo) => repoCard(repo, false)).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  elements.repoGrid.innerHTML = html;
 }
 
 function renderActiveFilters() {
   const chips = [];
   if (state.filters.search) chips.push(filterChip(`Search: ${elements.searchInput.value.trim()}`));
   if (state.filters.language !== 'all') chips.push(filterChip(`Language: ${state.filters.language}`));
+  if (state.filters.group !== 'all') chips.push(filterChip(`Group: ${labelForGroup(state.filters.group)}`));
   if (state.filters.scope !== 'all') chips.push(filterChip(`Scope: ${labelForScope(state.filters.scope)}`));
   if (state.filters.sort !== DEFAULT_FILTERS.sort) chips.push(filterChip(`Sort: ${labelForSort(state.filters.sort)}`));
 
   elements.activeFilters.classList.toggle('hidden', chips.length === 0);
   elements.activeFilters.innerHTML = chips.join('');
 }
+
+/* ── Data: featured & filtered ─────────────────────────────────────── */
 
 function getFeaturedRepos() {
   const featuredList = state.config.featured || [];
@@ -251,10 +367,11 @@ function getFeaturedRepos() {
 }
 
 function getFilteredRepos() {
-  const { search, language, scope, sort } = state.filters;
+  const { search, language, scope, group, sort } = state.filters;
 
   const filtered = state.repos.filter((repo) => {
     const matchesLanguage = language === 'all' || repo.language === language;
+    const matchesGroup = group === 'all' || repo.group === group;
     const matchesScope =
       scope === 'all' ||
       (scope === 'first-party' && !repo.fork) ||
@@ -269,6 +386,7 @@ function getFilteredRepos() {
       repo.description,
       repo.language,
       repo.status,
+      repo.group,
       ...(repo.topics || []),
       ...(repo.tags || []),
     ]
@@ -277,7 +395,7 @@ function getFilteredRepos() {
       .toLowerCase();
 
     const matchesSearch = !search || haystack.includes(search);
-    return matchesLanguage && matchesScope && matchesSearch;
+    return matchesLanguage && matchesGroup && matchesScope && matchesSearch;
   });
 
   return sortRepos(filtered, sort);
@@ -296,6 +414,8 @@ function sortRepos(repos, sortMode) {
   }
 }
 
+/* ── Card rendering ────────────────────────────────────────────────── */
+
 function repoCard(repo, featuredContext) {
   const badges = [];
   if (repo.status) badges.push(badge(labelForStatus(repo.status), `status-${slugify(repo.status)}`));
@@ -309,16 +429,27 @@ function repoCard(repo, featuredContext) {
     .map((topic) => `<span class="topic">${escapeHtml(topic)}</span>`)
     .join('');
 
-  const links = [
-    `<a href="${escapeHtml(repo.html_url)}" target="_blank" rel="noreferrer">GitHub</a>`,
-    repo.homepage ? `<a href="${escapeHtml(repo.homepage)}" target="_blank" rel="noreferrer">Homepage</a>` : '',
-  ]
-    .filter(Boolean)
-    .join('');
+  const actions = [];
+  actions.push(
+    `<a class="action-btn btn-repo" href="${escapeHtml(repo.html_url)}" target="_blank" rel="noreferrer">Repo \u2197</a>`,
+  );
+
+  const pagesUrl = getPagesUrl(repo);
+  if (pagesUrl) {
+    actions.push(
+      `<a class="action-btn btn-pages" href="${escapeHtml(pagesUrl)}" target="_blank" rel="noreferrer">Pages \u2197</a>`,
+    );
+  }
+
+  if (repo.parentUrl) {
+    actions.push(
+      `<a class="action-btn btn-parent" href="${escapeHtml(repo.parentUrl)}" target="_blank" rel="noreferrer">Parent \u2197</a>`,
+    );
+  }
 
   return `
     <article class="repo-card ${featuredContext ? 'featured' : ''}">
-      <div>
+      <div class="repo-card-header">
         <p class="repo-kicker">${escapeHtml(repo.full_name)}</p>
         <h3 class="repo-title">
           <a href="${escapeHtml(repo.html_url)}" target="_blank" rel="noreferrer">${escapeHtml(repo.name)}</a>
@@ -329,13 +460,24 @@ function repoCard(repo, featuredContext) {
       ${topics ? `<div class="topics">${topics}</div>` : ''}
       <div class="meta-row">
         <span>${escapeHtml(repo.language || 'Unspecified language')}</span>
-        <span>${repo.stargazers_count || 0} ★</span>
+        <span>${repo.stargazers_count || 0} \u2605</span>
         <span>Updated ${escapeHtml(formatDate(repo.updated_at))}</span>
       </div>
-      <div class="repo-links">${links}</div>
+      <div class="repo-actions">${actions.join('')}</div>
     </article>
   `;
 }
+
+function getPagesUrl(repo) {
+  if (repo.homepage && repo.homepage.includes('github.io')) return repo.homepage;
+  if (repo.has_pages) {
+    if (repo.name.endsWith('.github.io')) return repo.homepage || `https://${repo.name}/`;
+    return repo.homepage || `https://${state.config.org}.github.io/${repo.name}/`;
+  }
+  return '';
+}
+
+/* ── Helpers ───────────────────────────────────────────────────────── */
 
 function filterChip(text) {
   return `<span class="filter-chip">${escapeHtml(text)}</span>`;
@@ -345,11 +487,15 @@ function badge(text, extraClass = '') {
   return `<span class="badge ${extraClass}">${escapeHtml(text)}</span>`;
 }
 
+/* ── Data normalization ────────────────────────────────────────────── */
+
 function normalizeRepos(repos, overrides) {
   return [...repos]
+    .filter((repo) => !repo.name.toLowerCase().startsWith('zzz'))
     .map((repo) => {
       const override = overrides[repo.name] || {};
       const isFeatured = Boolean(override.featured || (state.config.featured || []).includes(repo.name));
+      const group = categorizeRepo(repo.name);
       return {
         ...repo,
         homepage: override.homepage || repo.homepage || '',
@@ -359,6 +505,9 @@ function normalizeRepos(repos, overrides) {
         topics: Array.from(new Set([...(repo.topics || []), ...(override.topics || []), ...inferTags(repo)])),
         tags: Array.from(new Set(override.tags || [])),
         isFeatured,
+        group,
+        parentUrl: '',
+        parentFullName: '',
       };
     })
     .sort((a, b) => {
@@ -415,6 +564,8 @@ function deriveStatus(repo) {
   return 'active';
 }
 
+/* ── Label maps ────────────────────────────────────────────────────── */
+
 function labelForStatus(status) {
   return {
     active: 'Active',
@@ -435,13 +586,20 @@ function labelForScope(scope) {
   }[scope] || scope;
 }
 
+function labelForGroup(key) {
+  const group = VISIBLE_GROUPS.find((g) => g.key === key);
+  return group ? group.label : key;
+}
+
 function labelForSort(sort) {
   return {
     'updated-desc': 'Recently updated',
     'stars-desc': 'Most stars',
-    'name-asc': 'Name A–Z',
+    'name-asc': 'Name A\u2013Z',
   }[sort] || sort;
 }
+
+/* ── Description helpers ───────────────────────────────────────────── */
 
 function looksStatusOnlyDescription(description) {
   return /under\s+(githubification|development|dvelopment|dbveleopment)/i.test(description);
@@ -450,6 +608,8 @@ function looksStatusOnlyDescription(description) {
 function cleanDescription(description) {
   return String(description || '').replace(/\s+/g, ' ').trim();
 }
+
+/* ── Fetch: live repos ─────────────────────────────────────────────── */
 
 async function fetchLiveRepos(org) {
   const endpoints = [
@@ -488,10 +648,44 @@ async function fetchRepoPages(baseUrl) {
     stargazers_count: repo.stargazers_count,
     fork: repo.fork,
     archived: repo.archived,
+    is_template: repo.is_template || false,
+    has_pages: repo.has_pages || false,
     topics: repo.topics || [],
     updated_at: repo.updated_at,
   }));
 }
+
+/* ── Fetch: fork parent info ───────────────────────────────────────── */
+
+async function fetchParentInfo(repos, org) {
+  const forks = repos.filter((r) => r.fork);
+  if (forks.length === 0) return;
+
+  const CONCURRENCY = PARENT_FETCH_CONCURRENCY;
+  for (let i = 0; i < forks.length; i += CONCURRENCY) {
+    const batch = forks.slice(i, i + CONCURRENCY);
+    await Promise.allSettled(
+      batch.map(async (repo) => {
+        try {
+          const res = await fetch(
+            `https://api.github.com/repos/${encodeURIComponent(org)}/${encodeURIComponent(repo.name)}`,
+            { headers: { Accept: 'application/vnd.github+json' } },
+          );
+          if (!res.ok) return;
+          const data = await res.json();
+          if (data.parent) {
+            repo.parentUrl = data.parent.html_url;
+            repo.parentFullName = data.parent.full_name;
+          }
+        } catch {
+          /* silently skip on network errors */
+        }
+      }),
+    );
+  }
+}
+
+/* ── Utility ───────────────────────────────────────────────────────── */
 
 async function loadJson(path) {
   const response = await fetch(path);

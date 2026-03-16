@@ -71,8 +71,10 @@ body::before {
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent 92%);
 }
 
+/* ── Full-width shell ──────────────────────────────────────────────── */
+
 .shell {
-  width: min(1180px, calc(100% - 2rem));
+  width: calc(100% - 3rem);
   margin: 0 auto;
   padding: 2rem 0 3rem;
 }
@@ -83,6 +85,8 @@ body::before {
   position: relative;
   z-index: 1;
 }
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
 
 .hero {
   padding: 3rem;
@@ -142,6 +146,8 @@ body::before {
   background: var(--warning-soft);
 }
 
+/* ── Typography ────────────────────────────────────────────────────── */
+
 h1,
 h2,
 h3,
@@ -170,7 +176,6 @@ h2 {
 .footer,
 .callout p,
 .meta-row,
-.repo-links,
 .field span,
 .empty-state p,
 .repo-kicker,
@@ -183,6 +188,8 @@ h2 {
   font-size: 1.08rem;
   max-width: 70ch;
 }
+
+/* ── Hero actions ──────────────────────────────────────────────────── */
 
 .hero-actions {
   display: flex;
@@ -224,6 +231,8 @@ h2 {
   background: rgba(255, 255, 255, 0.04);
 }
 
+/* ── Grids ─────────────────────────────────────────────────────────── */
+
 .stats,
 .snapshot-grid,
 .repo-grid {
@@ -237,8 +246,10 @@ h2 {
 }
 
 .repo-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
+
+/* ── Cards (stat / snapshot / repo) ────────────────────────────────── */
 
 .stat-card,
 .snapshot-card,
@@ -266,6 +277,8 @@ h2 {
   font-weight: 800;
 }
 
+/* ── Panels ────────────────────────────────────────────────────────── */
+
 .panel {
   margin-top: 1.5rem;
   padding: 1.75rem;
@@ -291,7 +304,6 @@ h2 {
 .legend-row,
 .badges,
 .topics,
-.repo-links,
 .active-filters {
   display: flex;
   flex-wrap: wrap;
@@ -329,9 +341,11 @@ h2 {
   line-height: 1.55;
 }
 
+/* ── Filters ───────────────────────────────────────────────────────── */
+
 .filters {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(180px, 1fr)) 160px;
+  grid-template-columns: minmax(0, 2fr) repeat(4, minmax(140px, 1fr)) 120px;
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: end;
@@ -374,6 +388,8 @@ a:focus-visible {
 .active-filters {
   margin-bottom: 1rem;
 }
+
+/* ── Badges / chips / topics ───────────────────────────────────────── */
 
 .filter-chip,
 .badge,
@@ -432,12 +448,68 @@ a:focus-visible {
   border: 1px solid rgba(141, 194, 255, 0.14);
 }
 
+/* ── Catalog container (holds group sections) ──────────────────────── */
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ── Group sections ────────────────────────────────────────────────── */
+
+.group-section {
+  /* each group is a self-contained block */
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.group-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.group-header-text h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+}
+
+.group-header-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.group-count {
+  flex-shrink: 0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── Repo cards ────────────────────────────────────────────────────── */
+
 .repo-card {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   min-height: 100%;
-  padding: 1.15rem;
+  padding: 1.25rem;
   background: linear-gradient(180deg, rgba(16, 35, 63, 0.88), rgba(8, 17, 31, 0.94));
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
@@ -453,6 +525,10 @@ a:focus-visible {
   background: linear-gradient(180deg, rgba(33, 43, 88, 0.94), rgba(12, 24, 43, 0.97));
 }
 
+.repo-card-header {
+  /* wrapper for kicker + title */
+}
+
 .repo-kicker {
   margin-bottom: 0.25rem;
   font-size: 0.8rem;
@@ -463,17 +539,12 @@ a:focus-visible {
   font-size: 1.12rem;
 }
 
-.repo-title a,
-.repo-links a {
-  text-decoration: none;
-}
-
 .repo-title a {
+  text-decoration: none;
   color: var(--text);
 }
 
-.repo-title a:hover,
-.repo-links a:hover {
+.repo-title a:hover {
   color: var(--accent);
 }
 
@@ -488,12 +559,69 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 0.8rem 1rem;
   font-size: 0.92rem;
+  color: var(--muted);
 }
 
-.repo-links a {
-  color: var(--accent);
-  font-weight: 700;
+/* ── Repo action buttons ───────────────────────────────────────────── */
+
+.repo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(150, 187, 255, 0.08);
 }
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.38rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-repo {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+}
+
+.btn-repo:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--border-strong);
+}
+
+.btn-pages {
+  color: var(--success);
+  background: rgba(102, 209, 158, 0.08);
+  border: 1px solid rgba(102, 209, 158, 0.22);
+}
+
+.btn-pages:hover {
+  background: rgba(102, 209, 158, 0.2);
+  border-color: rgba(102, 209, 158, 0.4);
+}
+
+.btn-parent {
+  color: var(--featured);
+  background: rgba(213, 183, 255, 0.08);
+  border: 1px solid rgba(213, 183, 255, 0.22);
+}
+
+.btn-parent:hover {
+  background: rgba(213, 183, 255, 0.2);
+  border-color: rgba(213, 183, 255, 0.4);
+}
+
+/* ── Empty state ───────────────────────────────────────────────────── */
 
 .empty-state {
   padding: 2rem;
@@ -502,6 +630,8 @@ a:focus-visible {
   text-align: center;
   background: rgba(255, 255, 255, 0.02);
 }
+
+/* ── Footer ────────────────────────────────────────────────────────── */
 
 .footer {
   margin-top: 1.5rem;
@@ -525,6 +655,8 @@ code {
   display: none;
 }
 
+/* ── Reduced motion ────────────────────────────────────────────────── */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -536,19 +668,28 @@ code {
   }
 }
 
+/* ── Medium screens ────────────────────────────────────────────────── */
+
 @media (max-width: 1120px) {
-  .filters,
-  .repo-grid,
+  .filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .snapshot-grid,
-  .stats,
-  .intro-panel {
+  .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro-panel {
+    grid-template-columns: 1fr;
   }
 }
 
+/* ── Small screens ─────────────────────────────────────────────────── */
+
 @media (max-width: 720px) {
   .shell {
-    width: min(100% - 1rem, 1180px);
+    width: calc(100% - 1rem);
     padding-top: 1rem;
   }
 
@@ -559,10 +700,18 @@ code {
   }
 
   .filters,
-  .repo-grid,
   .snapshot-grid,
-  .stats,
-  .intro-panel {
+  .stats {
     grid-template-columns: 1fr;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .group-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
