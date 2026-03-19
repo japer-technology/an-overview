@@ -1,6 +1,6 @@
 # 🗺️ japer-technology/an-overview
 
-A living catalog of every public repository published by **Japer Technology**.
+A catalog of every public repository published by **Japer Technology Pty. Ltd.**, an Australian company.
 
 🔗 **Live site** — <https://japer-technology.github.io/an-overview/>
 
