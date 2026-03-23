@@ -1,14 +1,14 @@
 # ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║  Repomix — Pack Repository → Artifact (Basic)                               ║
+# ║  Repomix — Pack Repository → Artifact (Basic)                                ║
 # ║                                                                              ║
 # ║  Packs the entire repository into a single AI-friendly XML file using        ║
 # ║  Repomix, then uploads it as a downloadable workflow artifact.               ║
 # ║                                                                              ║
-# ║  USAGE:  Actions → repomix-pack-artifact → Run workflow                     ║
+# ║  USAGE:  Actions → repomix-pack-artifact → Run workflow                      ║
 # ║                                                                              ║
 # ║  OUTPUT: repomix-output.xml available on the workflow run summary page.      ║
 # ║                                                                              ║
-# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  This file is self-contained — copy it into any repository and it will       ║
 # ║  work without modification.                                                  ║
 # ║                                                                              ║
 # ║  See: https://repomix.com/guide/github-actions                               ║
