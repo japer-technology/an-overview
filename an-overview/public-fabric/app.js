@@ -166,11 +166,11 @@ function wireEvents() {
 /* ── Config-driven copy ────────────────────────────────────────────── */
 
 function applyConfigCopy() {
-  document.title = state.config.title || 'Public Fabric';
-  elements.siteTitle.textContent = state.config.title || 'Public Fabric';
+  document.title = state.config.title || 'Public GitHub';
+  elements.siteTitle.textContent = state.config.title || 'Public GitHub';
   elements.heroCopy.textContent =
     state.config.tagline ||
-    'A living catalog of public repositories published by Japer Technology.';
+    'A catalog of public repositories published by Japer Technology Pty. Ltd.';
   elements.introCopy.textContent =
     state.config.intro ||
     'This public fabric is meant to become the durable front door for every public Japer Technology repository.';
