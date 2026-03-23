@@ -1,0 +1,122 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║  Repomix — Pack Repository → Commit to Repo                                 ║
+# ║                                                                              ║
+# ║  Packs the repository with Repomix and commits the resulting output file     ║
+# ║  directly back into the repository so it is always available in the tree.   ║
+# ║                                                                              ║
+# ║  The output file is written to the path specified by the `output-path`       ║
+# ║  input (default: repomix-output.xml at the repo root). The commit is made   ║
+# ║  by the github-actions bot and will NOT trigger another workflow run         ║
+# ║  (GitHub's standard safety behaviour for GITHUB_TOKEN commits).             ║
+# ║                                                                              ║
+# ║  INPUTS (all optional — defaults shown):                                     ║
+# ║    output-path   Path inside the repo for the packed file                   ║
+# ║                  (default: repomix-output.xml)                               ║
+# ║    style         Output format: xml | markdown | json | plain (default: xml) ║
+# ║    directories   Space-separated directories to pack          (default: .)   ║
+# ║    include       Comma-separated glob patterns to include      (default: "")  ║
+# ║    ignore        Comma-separated glob patterns to exclude      (default: "")  ║
+# ║    compress      Enable smart compression                      (default: true)║
+# ║                                                                              ║
+# ║  USAGE:  Actions → repomix-commit-to-repo → Run workflow                    ║
+# ║                                                                              ║
+# ║  NOTE:   Add `repomix-output.*` to .gitignore if you do NOT want the file   ║
+# ║          tracked permanently. Remove it from .gitignore to keep it.         ║
+# ║                                                                              ║
+# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  work without modification.                                                  ║
+# ║                                                                              ║
+# ║  See: https://repomix.com/guide/github-actions                               ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+name: repomix-commit-to-repo
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TRIGGERS — manual only
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      output-path:
+        description: "Path inside the repo for the output file"
+        required: false
+        default: "repomix-output.xml"
+      style:
+        description: "Output style"
+        required: false
+        default: "xml"
+        type: choice
+        options:
+          - xml
+          - markdown
+          - json
+          - plain
+      directories:
+        description: "Directories to pack (space-separated, e.g. 'src tests')"
+        required: false
+        default: "."
+      include:
+        description: "Glob patterns to include (comma-separated, e.g. '**/*.ts,**/*.md')"
+        required: false
+        default: ""
+      ignore:
+        description: "Glob patterns to ignore (comma-separated, e.g. '**/*.test.ts')"
+        required: false
+        default: ""
+      compress:
+        description: "Enable smart compression (removes whitespace / noise)"
+        required: false
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS — write access is required to commit the output back to the repo
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: write
+
+# ══════════════════════════════════════════════════════════════════════════════
+# JOBS
+# ══════════════════════════════════════════════════════════════════════════════
+jobs:
+  pack-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the default branch with write credentials so we can
+      #    push the packed output file back to the repository.
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      # 2. Run Repomix with the user-supplied options.
+      - name: Pack repository with Repomix
+        uses: yamadashy/repomix/.github/actions/repomix@main
+        with:
+          directories: ${{ inputs.directories }}
+          style:       ${{ inputs.style }}
+          include:     ${{ inputs.include }}
+          ignore:      ${{ inputs.ignore }}
+          compress:    ${{ inputs.compress }}
+          output:      ${{ inputs.output-path }}
+
+      # 3. Commit the packed output file back into the repository.
+      #    If the file is unchanged (identical content), no commit is made.
+      #    Commits made via GITHUB_TOKEN will NOT trigger further workflow runs
+      #    (GitHub's standard safety behaviour), preventing infinite loops.
+      - name: Commit Repomix output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ inputs.output-path }}"
+          if git diff --staged --quiet; then
+            echo "Repomix output unchanged — nothing to commit."
+          else
+            git commit -m "chore: update repomix output (${{ inputs.output-path }})"
+            git push
+            echo "✅ Repomix output committed and pushed."
+          fi
