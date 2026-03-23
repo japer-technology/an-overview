@@ -1,21 +1,21 @@
 # ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║  Repomix — Pack Repository → Artifact (Custom)                              ║
+# ║  Repomix — Pack Repository → Artifact (Custom)                               ║
 # ║                                                                              ║
 # ║  Packs the repository using Repomix with fully customisable options          ║
-# ║  supplied at run time via workflow_dispatch inputs, then uploads the          ║
+# ║  supplied at run time via workflow_dispatch inputs, then uploads the         ║
 # ║  result as a downloadable workflow artifact.                                 ║
 # ║                                                                              ║
 # ║  INPUTS (all optional — defaults shown):                                     ║
-# ║    directories   Space-separated list of directories to pack  (default: .)  ║
+# ║    directories   Space-separated list of directories to pack  (default: .)   ║
 # ║    style         Output format: xml | markdown | json | plain (default: xml) ║
 # ║    output        File name of the packed output (repomix-output.{ext})       ║
-# ║    include       Comma-separated glob patterns to include      (default: "")  ║
-# ║    ignore        Comma-separated glob patterns to exclude      (default: "")  ║
-# ║    compress      Enable smart compression                      (default: true)║
+# ║    include       Comma-separated glob patterns to include     (default: "")  ║
+# ║    ignore        Comma-separated glob patterns to exclude     (default: "")  ║
+# ║    compress      Enable smart compression                     (default: true)║
 # ║                                                                              ║
-# ║  USAGE:  Actions → repomix-pack-custom → Run workflow → fill in options     ║
+# ║  USAGE:  Actions → repomix-pack-custom → Run workflow → fill in options      ║
 # ║                                                                              ║
-# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  This file is self-contained — copy it into any repository and it will       ║
 # ║  work without modification.                                                  ║
 # ║                                                                              ║
 # ║  See: https://repomix.com/guide/github-actions                               ║
