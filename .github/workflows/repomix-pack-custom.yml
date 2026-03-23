@@ -1,0 +1,113 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║  Repomix — Pack Repository → Artifact (Custom)                              ║
+# ║                                                                              ║
+# ║  Packs the repository using Repomix with fully customisable options          ║
+# ║  supplied at run time via workflow_dispatch inputs, then uploads the          ║
+# ║  result as a downloadable workflow artifact.                                 ║
+# ║                                                                              ║
+# ║  INPUTS (all optional — defaults shown):                                     ║
+# ║    directories   Space-separated list of directories to pack  (default: .)  ║
+# ║    style         Output format: xml | markdown | json | plain (default: xml) ║
+# ║    output        File name of the packed output (repomix-output.{ext})       ║
+# ║    include       Comma-separated glob patterns to include      (default: "")  ║
+# ║    ignore        Comma-separated glob patterns to exclude      (default: "")  ║
+# ║    compress      Enable smart compression                      (default: true)║
+# ║                                                                              ║
+# ║  USAGE:  Actions → repomix-pack-custom → Run workflow → fill in options     ║
+# ║                                                                              ║
+# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  work without modification.                                                  ║
+# ║                                                                              ║
+# ║  See: https://repomix.com/guide/github-actions                               ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+name: repomix-pack-custom
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TRIGGERS — manual only, with user-supplied options
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      directories:
+        description: "Directories to pack (space-separated, e.g. 'src tests')"
+        required: false
+        default: "."
+      style:
+        description: "Output style"
+        required: false
+        default: "xml"
+        type: choice
+        options:
+          - xml
+          - markdown
+          - json
+          - plain
+      include:
+        description: "Glob patterns to include (comma-separated, e.g. '**/*.ts,**/*.md')"
+        required: false
+        default: ""
+      ignore:
+        description: "Glob patterns to ignore (comma-separated, e.g. '**/*.test.ts')"
+        required: false
+        default: ""
+      compress:
+        description: "Enable smart compression (removes whitespace / noise)"
+        required: false
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS — read-only; we only produce an artifact, no writes needed
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: read
+
+# ══════════════════════════════════════════════════════════════════════════════
+# JOBS
+# ══════════════════════════════════════════════════════════════════════════════
+jobs:
+  pack-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the full repository so Repomix can see every file.
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Derive the output filename from the chosen style so the artifact
+      #    carries the correct file extension automatically.
+      - name: Resolve output filename
+        id: resolve
+        run: |
+          style="${{ inputs.style }}"
+          case "$style" in
+            markdown) ext="md" ;;
+            json)     ext="json" ;;
+            plain)    ext="txt" ;;
+            *)        ext="xml" ;;
+          esac
+          echo "filename=repomix-output.${ext}" >> "$GITHUB_OUTPUT"
+
+      # 3. Run Repomix with the user-supplied options.
+      - name: Pack repository with Repomix
+        uses: yamadashy/repomix/.github/actions/repomix@main
+        with:
+          directories: ${{ inputs.directories }}
+          style:       ${{ inputs.style }}
+          include:     ${{ inputs.include }}
+          ignore:      ${{ inputs.ignore }}
+          compress:    ${{ inputs.compress }}
+          output:      ${{ steps.resolve.outputs.filename }}
+
+      # 4. Upload the packed file as a workflow artifact so it can be
+      #    downloaded directly from the Actions run summary page.
+      - name: Upload Repomix output
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.resolve.outputs.filename }}
+          path: ${{ steps.resolve.outputs.filename }}
+          retention-days: 30

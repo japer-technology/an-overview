@@ -1,0 +1,57 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║  Repomix — Pack Repository → Artifact (Basic)                               ║
+# ║                                                                              ║
+# ║  Packs the entire repository into a single AI-friendly XML file using        ║
+# ║  Repomix, then uploads it as a downloadable workflow artifact.               ║
+# ║                                                                              ║
+# ║  USAGE:  Actions → repomix-pack-artifact → Run workflow                     ║
+# ║                                                                              ║
+# ║  OUTPUT: repomix-output.xml available on the workflow run summary page.      ║
+# ║                                                                              ║
+# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  work without modification.                                                  ║
+# ║                                                                              ║
+# ║  See: https://repomix.com/guide/github-actions                               ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+name: repomix-pack-artifact
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TRIGGERS — manual only
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS — read-only; we only produce an artifact, no writes needed
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: read
+
+# ══════════════════════════════════════════════════════════════════════════════
+# JOBS
+# ══════════════════════════════════════════════════════════════════════════════
+jobs:
+  pack-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the full repository so Repomix can see every file.
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Run Repomix to pack the entire repository into a single XML file.
+      #    Smart compression is enabled by default (removes whitespace / noise).
+      - name: Pack repository with Repomix
+        uses: yamadashy/repomix/.github/actions/repomix@main
+        with:
+          output: repomix-output.xml
+
+      # 3. Upload the packed file as a workflow artifact so it can be
+      #    downloaded directly from the Actions run summary page.
+      - name: Upload Repomix output
+        uses: actions/upload-artifact@v4
+        with:
+          name: repomix-output.xml
+          path: repomix-output.xml
+          retention-days: 30
