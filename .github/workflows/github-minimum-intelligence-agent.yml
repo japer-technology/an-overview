@@ -462,12 +462,12 @@ jobs:
       - name: Check public-fabric exists
         id: check-folder
         run: |
-          if [ -d ".github-minimum-intelligence/public-fabric" ]; then
+          if [ -d "an-overview/public-fabric" ]; then
             echo "folder_exists=true" >> "$GITHUB_OUTPUT"
             echo "✅ public-fabric directory found."
           else
             echo "folder_exists=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::Directory .github-minimum-intelligence/public-fabric not found. Skipping Pages deployment. Run the installer first (Actions → Run workflow)."
+            echo "::warning::Directory an-overview/public-fabric not found. Skipping Pages deployment. Run the installer first (Actions → Run workflow)."
           fi
 
       # 3. AUTO-ENABLE Pages — attempt to enable GitHub Pages via the API.
@@ -504,7 +504,7 @@ jobs:
         if: steps.check-folder.outputs.folder_exists == 'true' && steps.enable-pages.outputs.pages_active == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: '.github-minimum-intelligence/public-fabric'
+          path: 'an-overview/public-fabric'
 
       # 6. Deploy the uploaded artifact to GitHub Pages.
       - name: Deploy to GitHub Pages
