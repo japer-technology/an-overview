@@ -1,29 +1,29 @@
 # ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║  Repomix — Pack Repository → Commit to Repo                                 ║
+# ║  Repomix — Pack Repository → Commit to Repo                                  ║
 # ║                                                                              ║
 # ║  Packs the repository with Repomix and commits the resulting output file     ║
-# ║  directly back into the repository so it is always available in the tree.   ║
+# ║  directly back into the repository so it is always available in the tree.    ║
 # ║                                                                              ║
 # ║  The output file is written to the path specified by the `output-path`       ║
-# ║  input (default: repomix-output.xml at the repo root). The commit is made   ║
+# ║  input (default: repomix-output.xml at the repo root). The commit is made    ║
 # ║  by the github-actions bot and will NOT trigger another workflow run         ║
-# ║  (GitHub's standard safety behaviour for GITHUB_TOKEN commits).             ║
+# ║  (GitHub's standard safety behaviour for GITHUB_TOKEN commits).              ║
 # ║                                                                              ║
 # ║  INPUTS (all optional — defaults shown):                                     ║
-# ║    output-path   Path inside the repo for the packed file                   ║
+# ║    output-path   Path inside the repo for the packed file                    ║
 # ║                  (default: repomix-output.xml)                               ║
 # ║    style         Output format: xml | markdown | json | plain (default: xml) ║
 # ║    directories   Space-separated directories to pack          (default: .)   ║
-# ║    include       Comma-separated glob patterns to include      (default: "")  ║
-# ║    ignore        Comma-separated glob patterns to exclude      (default: "")  ║
-# ║    compress      Enable smart compression                      (default: true)║
+# ║    include       Comma-separated glob patterns to include     (default: "")  ║
+# ║    ignore        Comma-separated glob patterns to exclude     (default: "")  ║
+# ║    compress      Enable smart compression                     (default: true)║
 # ║                                                                              ║
-# ║  USAGE:  Actions → repomix-commit-to-repo → Run workflow                    ║
+# ║  USAGE:  Actions → repomix-commit-to-repo → Run workflow                     ║
 # ║                                                                              ║
-# ║  NOTE:   Add `repomix-output.*` to .gitignore if you do NOT want the file   ║
-# ║          tracked permanently. Remove it from .gitignore to keep it.         ║
+# ║  NOTE:   Add `repomix-output.*` to .gitignore if you do NOT want the file    ║
+# ║          tracked permanently. Remove it from .gitignore to keep it.          ║
 # ║                                                                              ║
-# ║  This file is self-contained — copy it into any repository and it will      ║
+# ║  This file is self-contained — copy it into any repository and it will       ║
 # ║  work without modification.                                                  ║
 # ║                                                                              ║
 # ║  See: https://repomix.com/guide/github-actions                               ║
