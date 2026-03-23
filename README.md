@@ -25,20 +25,12 @@ It is intended to be the maintained front door for:
 | **Snapshot fallback** | Ships a committed JSON snapshot so the page always renders |
 | **Curated summaries** | Uses hand-written summaries and featured-repo metadata from `data/site.json` |
 | **Search & filters** | Supports full-text search, language filtering, scope filtering, and sort options |
-| **GitHub Pages ready** | Deploys from `.github-minimum-intelligence/public-fabric` |
-
-## Important path
-
-The site lives in a hidden folder:
-
-- `.github-minimum-intelligence/public-fabric`
-
-If you do not see `.github-minimum-intelligence` in your editor or file browser, enable **Show Hidden Files**.
+| **GitHub Pages ready** | Deploys from `an-overview/public-fabric` |
 
 ## Repository layout
 
 ```text
-.github-minimum-intelligence/
+an-overview/
   public-fabric/                  GitHub Pages site root
     index.html                    Page shell
     styles.css                    Styling and responsive layout
@@ -49,10 +41,9 @@ If you do not see `.github-minimum-intelligence` in your editor or file browser,
     404.html                      Friendly not-found page
     robots.txt                    Simple crawler allow-list
     .nojekyll                     Disables Jekyll processing
-PUBLIC-FABRIC-ONLINE.md           Go-live and deployment checklist
-tools/
   refresh-public-fabric-snapshot.py
                                   Refreshes the snapshot from the GitHub API
+PUBLIC-FABRIC-ONLINE.md           Go-live and deployment checklist
 ```
 
 ## Maintaining the catalog
@@ -61,14 +52,14 @@ tools/
 
 Edit:
 
-- `.github-minimum-intelligence/public-fabric/data/site.json`
+- `an-overview/public-fabric/data/site.json`
 
 ### Refresh the snapshot fallback
 
 Run:
 
 ```bash
-python tools/refresh-public-fabric-snapshot.py
+python an-overview/refresh-public-fabric-snapshot.py
 ```
 
 ### Deploy

@@ -9,7 +9,7 @@ import urllib.request
 from pathlib import Path
 
 ORG = "japer-technology"
-OUTPUT = Path(".github-minimum-intelligence/public-fabric/data/repos-snapshot.json")
+OUTPUT = Path("an-overview/public-fabric/data/repos-snapshot.json")
 API_URLS = [
     f"https://api.github.com/orgs/{ORG}/repos?per_page=100&type=public&sort=updated",
     f"https://api.github.com/users/{ORG}/repos?per_page=100&type=public&sort=updated",

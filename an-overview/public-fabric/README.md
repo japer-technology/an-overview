@@ -25,11 +25,6 @@ This folder is the deployable site root for GitHub Pages. It renders a polished 
 
 1. Edit `data/site.json` to improve summaries, tags, featured repos, or statuses.
 2. Optionally refresh the snapshot:
-   - `python tools/refresh-public-fabric-snapshot.py`
+   - `python an-overview/refresh-public-fabric-snapshot.py`
 3. Push to `main`.
-4. GitHub Actions deploys `.github-minimum-intelligence/public-fabric` to GitHub Pages.
-
-## Notes
-
-- This folder sits under `.github-minimum-intelligence`, which is a **hidden directory** in many file browsers.
-- If you cannot see it locally, enable **Show Hidden Files** in your editor or OS.
+4. GitHub Actions deploys `an-overview/public-fabric` to GitHub Pages.
