@@ -41,7 +41,8 @@ an-overview/
     404.html                      Friendly not-found page
     robots.txt                    Simple crawler allow-list
     .nojekyll                     Disables Jekyll processing
-  refresh-public-fabric-snapshot.py
+  script/
+    refresh-public-fabric-snapshot.py
                                   Refreshes the snapshot from the GitHub API
 PUBLIC-FABRIC-ONLINE.md           Go-live and deployment checklist
 ```
@@ -59,7 +60,7 @@ Edit:
 Run:
 
 ```bash
-python an-overview/refresh-public-fabric-snapshot.py
+python an-overview/script/refresh-public-fabric-snapshot.py
 ```
 
 ### Deploy
