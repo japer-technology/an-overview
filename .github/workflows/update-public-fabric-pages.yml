@@ -1,0 +1,125 @@
+name: update-public-fabric-pages
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TRIGGERS
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  # 1. Daily schedule — keeps the repos snapshot fresh even when no one pushes.
+  schedule:
+    - cron: "0 6 * * *"
+
+  # 2. Manual trigger — run on demand from the Actions UI.
+  workflow_dispatch:
+
+  # 3. Push to main that touches the public-fabric directory — ensures human-
+  #    authored edits (styles, app.js, site.json, …) are deployed immediately.
+  #    Commits pushed by GITHUB_TOKEN do not fire new workflow runs, so the
+  #    schedule and workflow_dispatch above cover the automated-refresh case.
+  push:
+    branches: ["main"]
+    paths:
+      - "an-overview/public-fabric/**"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: write   # Commit the refreshed repos-snapshot.json back to the repo.
+  pages: write      # Upload and deploy the public-fabric site to GitHub Pages.
+  id-token: write   # Required by actions/deploy-pages for OIDC-based deployment.
+
+# ══════════════════════════════════════════════════════════════════════════════
+# JOBS
+# ══════════════════════════════════════════════════════════════════════════════
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+
+    # Only one Pages deployment at a time across the entire repository.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+
+    # Surface the deployed URL in the workflow run UI.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # 1. Check out the repository on the main branch so we can both read
+      #    and write files (the git push step needs a writable working tree).
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      # 2. Refresh the repos snapshot from the GitHub API.
+      #    The script writes an-overview/public-fabric/data/repos-snapshot.json.
+      - name: Refresh repos snapshot
+        run: python3 an-overview/script/refresh-public-fabric-snapshot.py
+
+      # 3. Commit the updated snapshot if anything changed.
+      #    Commits pushed via GITHUB_TOKEN do not fire new workflow runs, so
+      #    the Pages deployment in this same run picks up the fresh snapshot.
+      - name: Commit snapshot changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add an-overview/public-fabric/data/repos-snapshot.json
+          if git diff --staged --quiet; then
+            echo "Snapshot unchanged — nothing to commit."
+          else
+            git commit -m "chore: refresh public-fabric repos snapshot"
+            git push
+          fi
+
+      # 4. Verify the public-fabric directory is present before attempting to
+      #    deploy. Emit a clear warning (rather than a cryptic failure) when
+      #    the directory is missing.
+      - name: Check public-fabric exists
+        id: check-folder
+        run: |
+          if [ -d "an-overview/public-fabric" ]; then
+            echo "folder_exists=true" >> "$GITHUB_OUTPUT"
+            echo "✅ public-fabric directory found."
+          else
+            echo "folder_exists=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Directory an-overview/public-fabric not found. Skipping Pages deployment."
+          fi
+
+      # 5. AUTO-ENABLE Pages if it is not already active.
+      - name: Enable Pages
+        if: steps.check-folder.outputs.folder_exists == 'true'
+        id: enable-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh api "repos/${{ github.repository }}/pages" --silent 2>/dev/null; then
+            echo "pages_active=true" >> "$GITHUB_OUTPUT"
+            echo "✅ GitHub Pages is already enabled."
+          elif gh api "repos/${{ github.repository }}/pages" \
+            -X POST -f build_type=workflow --silent 2>/dev/null; then
+            echo "pages_active=true" >> "$GITHUB_OUTPUT"
+            echo "✅ GitHub Pages has been enabled."
+          else
+            echo "pages_active=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Could not enable GitHub Pages automatically. Please enable it manually in repository Settings → Pages → Source → GitHub Actions."
+          fi
+
+      # 6. Configure Pages metadata.
+      - name: Setup Pages
+        if: steps.check-folder.outputs.folder_exists == 'true' && steps.enable-pages.outputs.pages_active == 'true'
+        uses: actions/configure-pages@v5
+
+      # 7. Upload the public-fabric directory as a Pages artifact.
+      - name: Upload artifact
+        if: steps.check-folder.outputs.folder_exists == 'true' && steps.enable-pages.outputs.pages_active == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "an-overview/public-fabric"
+
+      # 8. Deploy the uploaded artifact to GitHub Pages.
+      - name: Deploy to GitHub Pages
+        if: steps.check-folder.outputs.folder_exists == 'true' && steps.enable-pages.outputs.pages_active == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
