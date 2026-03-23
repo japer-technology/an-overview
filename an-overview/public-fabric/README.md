@@ -25,6 +25,6 @@ This folder is the deployable site root for GitHub Pages. It renders a polished 
 
 1. Edit `data/site.json` to improve summaries, tags, featured repos, or statuses.
 2. Optionally refresh the snapshot:
-   - `python an-overview/refresh-public-fabric-snapshot.py`
+   - `python an-overview/script/refresh-public-fabric-snapshot.py`
 3. Push to `main`.
 4. GitHub Actions deploys `an-overview/public-fabric` to GitHub Pages.
