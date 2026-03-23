@@ -1,5 +1,18 @@
 [
   {
+    "name": "github-intelligence",
+    "full_name": "japer-technology/github-intelligence",
+    "html_url": "https://github.com/japer-technology/github-intelligence",
+    "description": "\ud83e\udde0UNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-23T03:51:16Z"
+  },
+  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -13,7 +26,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-03-23T03:48:38Z"
+    "updated_at": "2026-03-23T03:48:48Z"
   },
   {
     "name": "github-intelligence-emergency",
@@ -55,19 +68,6 @@
       "website"
     ],
     "updated_at": "2026-03-23T03:24:31Z"
-  },
-  {
-    "name": "github-intelligence",
-    "full_name": "japer-technology/github-intelligence",
-    "html_url": "https://github.com/japer-technology/github-intelligence",
-    "description": "\ud83e\udde0UNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-23T03:05:47Z"
   },
   {
     "name": "gmi-youtube",
