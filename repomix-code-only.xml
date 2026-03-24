@@ -95,6 +95,7 @@ an-overview/
     styles.css
   script/
     refresh-public-fabric-snapshot.py
+  GITHUB-DASHBOARD.png
 .gitattributes
 .gitignore
 </directory_structure>
@@ -2394,6 +2395,33 @@ async function main()
 <file path="an-overview/public-fabric/data/repos-snapshot.json">
 [
   {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
+    "language": "TypeScript",
+    "stargazers_count": 4,
+    "fork": true,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "ai-coding-assistant",
+      "anthropic",
+      "automation",
+      "chatops",
+      "ci-cd",
+      "conversational-ai",
+      "developer-tools",
+      "github-actions",
+      "github-issues",
+      "llm",
+      "openai",
+      "typescript"
+    ],
+    "updated_at": "2026-03-24T04:11:27Z"
+  },
+  {
     "name": "github-intelligence",
     "full_name": "japer-technology/github-intelligence",
     "html_url": "https://github.com/japer-technology/github-intelligence",
@@ -2404,49 +2432,7 @@ async function main()
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-23T03:51:16Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f JAPER Technology's GitHub",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-03-23T03:48:48Z"
-  },
-  {
-    "name": "github-intelligence-emergency",
-    "full_name": "japer-technology/github-intelligence-emergency",
-    "html_url": "https://github.com/japer-technology/github-intelligence-emergency",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83c\udd98 Emergency",
-    "homepage": "https://japer-technology.github.io/github-intelligence-emergency",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-23T03:38:15Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-23T03:25:05Z"
+    "updated_at": "2026-03-24T00:55:18Z"
   },
   {
     "name": "japer-technology.github.io",
@@ -2461,7 +2447,36 @@ async function main()
     "topics": [
       "website"
     ],
-    "updated_at": "2026-03-23T03:24:31Z"
+    "updated_at": "2026-03-24T00:22:16Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-03-24T00:11:26Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-24T00:04:30Z"
   },
   {
     "name": "gmi-youtube",
@@ -2474,7 +2489,20 @@ async function main()
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-23T00:27:03Z"
+    "updated_at": "2026-03-23T23:12:31Z"
+  },
+  {
+    "name": "github-intelligence-emergency",
+    "full_name": "japer-technology/github-intelligence-emergency",
+    "html_url": "https://github.com/japer-technology/github-intelligence-emergency",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83c\udd98 Emergency",
+    "homepage": "https://japer-technology.github.io/github-intelligence-emergency",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-23T03:38:15Z"
   },
   {
     "name": "github-n8n-intelligence",
@@ -2527,33 +2555,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-22T00:03:33Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
-    "language": "TypeScript",
-    "stargazers_count": 4,
-    "fork": true,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ai-coding-assistant",
-      "anthropic",
-      "automation",
-      "chatops",
-      "ci-cd",
-      "conversational-ai",
-      "developer-tools",
-      "github-actions",
-      "github-issues",
-      "llm",
-      "openai",
-      "typescript"
-    ],
-    "updated_at": "2026-03-21T04:28:14Z"
   },
   {
     "name": "japer-youtube",
