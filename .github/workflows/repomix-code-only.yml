@@ -1,0 +1,77 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║  Repomix — Pack Code Only → Commit to Repo                                   ║
+# ║                                                                              ║
+# ║  Automatically packs all code files (excluding Markdown) with Repomix and   ║
+# ║  commits the result (repomix-code-only.xml) back into the repository so it  ║
+# ║  is always in sync with the latest code.                                     ║
+# ║                                                                              ║
+# ║  TRIGGERS:  Any push that changes a non-Markdown file.                       ║
+# ║             Markdown-only changes (*.md) are intentionally ignored.          ║
+# ║                                                                              ║
+# ║  OUTPUT:    repomix-code-only.xml committed to the root of the repository.   ║
+# ║                                                                              ║
+# ║  NOTE:  Commits made via GITHUB_TOKEN will NOT trigger another workflow run  ║
+# ║         (GitHub's standard safety behaviour), so there is no infinite loop.  ║
+# ║                                                                              ║
+# ║  This file is self-contained — copy it into any repository and it will       ║
+# ║  work without modification.                                                  ║
+# ║                                                                              ║
+# ║  See: https://repomix.com/guide/github-actions                               ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+name: repomix-code-only
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TRIGGERS — run on every push that touches a non-Markdown file
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  push:
+    paths-ignore:
+      - "**/*.md"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS — write access is required to commit the output back to the repo
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: write
+
+# ══════════════════════════════════════════════════════════════════════════════
+# JOBS
+# ══════════════════════════════════════════════════════════════════════════════
+jobs:
+  pack-code-only:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the branch that triggered the push so the output is
+      #    committed back to the correct branch.
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      # 2. Run Repomix, excluding all Markdown files so only code is packed.
+      #    Smart compression is enabled to reduce noise.
+      - name: Pack code with Repomix (no Markdown)
+        uses: yamadashy/repomix/.github/actions/repomix@main
+        with:
+          ignore: "**/*.md"
+          compress: "true"
+          output: repomix-code-only.xml
+
+      # 3. Commit the packed output file back into the repository.
+      #    If the file is unchanged (identical content), no commit is made.
+      #    Commits made via GITHUB_TOKEN will NOT trigger further workflow runs
+      #    (GitHub's standard safety behaviour), preventing infinite loops.
+      - name: Commit Repomix output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add repomix-code-only.xml
+          if git diff --staged --quiet; then
+            echo "Repomix output unchanged — nothing to commit."
+          else
+            git commit -m "chore: update repomix-code-only.xml"
+            git push
+            echo "✅ Repomix code-only output committed and pushed."
+          fi
