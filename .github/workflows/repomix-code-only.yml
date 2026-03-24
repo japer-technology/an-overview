@@ -1,8 +1,8 @@
 # ╔══════════════════════════════════════════════════════════════════════════════╗
 # ║  Repomix — Pack Code Only → Commit to Repo                                   ║
 # ║                                                                              ║
-# ║  Automatically packs all code files (excluding Markdown) with Repomix and   ║
-# ║  commits the result (repomix-code-only.xml) back into the repository so it  ║
+# ║  Automatically packs all code files (excluding Markdown) with Repomix and    ║
+# ║  commits the result (repomix-code-only.xml) back into the repository so it   ║
 # ║  is always in sync with the latest code.                                     ║
 # ║                                                                              ║
 # ║  TRIGGERS:  Any push that changes a non-Markdown file.                       ║
