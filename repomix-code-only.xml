@@ -95,7 +95,7 @@ an-overview/
     styles.css
   script/
     refresh-public-fabric-snapshot.py
-  GITHUB-DASHBOARD.png
+  GITHUB-OVERVIEW.png
 .gitattributes
 .gitignore
 </directory_structure>
