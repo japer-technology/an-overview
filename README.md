@@ -2,6 +2,12 @@
 
 A catalog of every public repository published by **Japer Technology Pty. Ltd.**
 
+<p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/japer-technology/an-overview/main/an-overview/GITHUB-DASHBOARD.png" alt="GitHub Intelligence Dashboard" width="500">
+  </picture>
+</p>
+
 🔗 **Live site** — <https://japer-technology.github.io/an-overview/>
 
 ---
