@@ -1,6 +1,6 @@
 # 🗺️ [japer-technology/an-overview](https://japer-technology.github.io/an-overview/)
 
-A catalog of every public repository published by **Japer Technology Pty. Ltd.**
+An overview of all public repositories published by **Japer Technology Pty. Ltd.**
 
 <p align="center">
   <picture>
