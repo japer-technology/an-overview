@@ -5,25 +5,25 @@
     "html_url": "https://github.com/japer-technology/gmi-openrouter-stepfun-step-3-5-flash-free",
     "description": "\ud83d\ude80An AI Agent called Sylow",
     "homepage": "",
-    "language": "Python",
+    "language": "TypeScript",
     "stargazers_count": 1,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-25T04:48:36Z"
+    "updated_at": "2026-03-26T04:38:06Z"
   },
   {
-    "name": "githubification",
-    "full_name": "japer-technology/githubification",
-    "html_url": "https://github.com/japer-technology/githubification",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "name": "github-intelligence-supervisor",
+    "full_name": "japer-technology/github-intelligence-supervisor",
+    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
+    "description": "\ud83e\udde0GtiHub Intelligence \ud83d\udea8 Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
     "homepage": "",
-    "language": "TypeScript",
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-25T03:21:29Z"
+    "updated_at": "2026-03-26T03:33:23Z"
   },
   {
     "name": "japer-technology.github.io",
@@ -38,49 +38,7 @@
     "topics": [
       "website"
     ],
-    "updated_at": "2026-03-25T00:25:22Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-25T00:05:33Z"
-  },
-  {
-    "name": "githubification-NemoClaw",
-    "full_name": "japer-technology/githubification-NemoClaw",
-    "html_url": "https://github.com/japer-technology/githubification-NemoClaw",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://docs.nvidia.com/nemoclaw/latest/",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-24T21:22:37Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-03-24T07:08:41Z"
+    "updated_at": "2026-03-26T03:07:31Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -107,7 +65,75 @@
       "openai",
       "typescript"
     ],
-    "updated_at": "2026-03-24T04:11:27Z"
+    "updated_at": "2026-03-26T01:15:06Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-26T00:06:57Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-03-25T21:54:13Z"
+  },
+  {
+    "name": "gmi-youtube",
+    "full_name": "japer-technology/gmi-youtube",
+    "html_url": "https://github.com/japer-technology/gmi-youtube",
+    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/gmi-youtube",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-25T06:32:16Z"
+  },
+  {
+    "name": "githubification",
+    "full_name": "japer-technology/githubification",
+    "html_url": "https://github.com/japer-technology/githubification",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-25T03:21:29Z"
+  },
+  {
+    "name": "githubification-NemoClaw",
+    "full_name": "japer-technology/githubification-NemoClaw",
+    "html_url": "https://github.com/japer-technology/githubification-NemoClaw",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://docs.nvidia.com/nemoclaw/latest/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-24T21:22:37Z"
   },
   {
     "name": "github-intelligence",
@@ -121,19 +147,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-24T00:55:18Z"
-  },
-  {
-    "name": "gmi-youtube",
-    "full_name": "japer-technology/gmi-youtube",
-    "html_url": "https://github.com/japer-technology/gmi-youtube",
-    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/gmi-youtube",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-23T23:12:31Z"
   },
   {
     "name": "github-intelligence-emergency",
@@ -290,19 +303,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-19T01:54:40Z"
-  },
-  {
-    "name": "github-intelligence-supervisor",
-    "full_name": "japer-technology/github-intelligence-supervisor",
-    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
-    "description": "\ud83e\udde0GtiHub Intelligence \ud83d\udea8 Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-19T01:30:17Z"
   },
   {
     "name": "githubification-picoclaw",
