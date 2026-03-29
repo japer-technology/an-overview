@@ -1,31 +1,43 @@
 [
   {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-03-28T00:25:04Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
+    "name": "github-n8n-intelligence",
+    "full_name": "japer-technology/github-n8n-intelligence",
+    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
+    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-28T00:05:19Z"
+    "updated_at": "2026-03-29T05:06:31Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
+    "language": "TypeScript",
+    "stargazers_count": 4,
+    "fork": true,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "ai-coding-assistant",
+      "anthropic",
+      "automation",
+      "chatops",
+      "ci-cd",
+      "conversational-ai",
+      "developer-tools",
+      "github-actions",
+      "github-issues",
+      "llm",
+      "openai",
+      "typescript"
+    ],
+    "updated_at": "2026-03-29T04:58:32Z"
   },
   {
     "name": "githubification",
@@ -38,7 +50,77 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-27T20:55:08Z"
+    "updated_at": "2026-03-29T02:24:42Z"
+  },
+  {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-03-29T00:28:29Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T00:05:51Z"
+  },
+  {
+    "name": "github-intelligence",
+    "full_name": "japer-technology/github-intelligence",
+    "html_url": "https://github.com/japer-technology/github-intelligence",
+    "description": "\ud83e\udde0GitHub as AI Infrastructure\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-28T22:56:12Z"
+  },
+  {
+    "name": "gmi-youtube",
+    "full_name": "japer-technology/gmi-youtube",
+    "html_url": "https://github.com/japer-technology/gmi-youtube",
+    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/gmi-youtube",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-28T06:29:06Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-03-28T06:18:49Z"
   },
   {
     "name": "githubification-hermes-agent",
@@ -93,48 +175,6 @@
     "updated_at": "2026-03-27T20:06:59Z"
   },
   {
-    "name": "gmi-youtube",
-    "full_name": "japer-technology/gmi-youtube",
-    "html_url": "https://github.com/japer-technology/gmi-youtube",
-    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/gmi-youtube",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-27T06:36:02Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-03-27T06:24:12Z"
-  },
-  {
-    "name": "github-intelligence",
-    "full_name": "japer-technology/github-intelligence",
-    "html_url": "https://github.com/japer-technology/github-intelligence",
-    "description": "\ud83e\udde0UNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-26T23:25:10Z"
-  },
-  {
     "name": "github-intelligence-supervisor",
     "full_name": "japer-technology/github-intelligence-supervisor",
     "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
@@ -146,33 +186,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-26T21:14:20Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
-    "language": "TypeScript",
-    "stargazers_count": 4,
-    "fork": true,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ai-coding-assistant",
-      "anthropic",
-      "automation",
-      "chatops",
-      "ci-cd",
-      "conversational-ai",
-      "developer-tools",
-      "github-actions",
-      "github-issues",
-      "llm",
-      "openai",
-      "typescript"
-    ],
-    "updated_at": "2026-03-26T01:15:06Z"
   },
   {
     "name": "githubification-NemoClaw",
@@ -199,19 +212,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-23T03:38:15Z"
-  },
-  {
-    "name": "github-n8n-intelligence",
-    "full_name": "japer-technology/github-n8n-intelligence",
-    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
-    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-22T04:50:39Z"
   },
   {
     "name": "github-intelligence-overwatch",
