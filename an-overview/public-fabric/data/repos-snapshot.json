@@ -1,18 +1,5 @@
 [
   {
-    "name": "github-n8n-intelligence",
-    "full_name": "japer-technology/github-n8n-intelligence",
-    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
-    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-29T05:06:31Z"
-  },
-  {
     "name": "github-minimum-intelligence",
     "full_name": "japer-technology/github-minimum-intelligence",
     "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
@@ -37,20 +24,33 @@
       "openai",
       "typescript"
     ],
-    "updated_at": "2026-03-29T04:58:32Z"
+    "updated_at": "2026-03-30T04:13:24Z"
   },
   {
-    "name": "githubification",
-    "full_name": "japer-technology/githubification",
-    "html_url": "https://github.com/japer-technology/githubification",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "name": "githubification-gstack",
+    "full_name": "japer-technology/githubification-gstack",
+    "html_url": "https://github.com/japer-technology/githubification-gstack",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
     "homepage": "",
     "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-30T03:41:05Z"
+  },
+  {
+    "name": "github-pi-mono-intelligence",
+    "full_name": "japer-technology/github-pi-mono-intelligence",
+    "html_url": "https://github.com/japer-technology/github-pi-mono-intelligence",
+    "description": "\ud83e\udde0pi-mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": null,
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-29T02:24:42Z"
+    "updated_at": "2026-03-30T00:45:30Z"
   },
   {
     "name": "japer-technology.github.io",
@@ -65,7 +65,7 @@
     "topics": [
       "website"
     ],
-    "updated_at": "2026-03-29T00:28:29Z"
+    "updated_at": "2026-03-30T00:28:49Z"
   },
   {
     "name": "github-intelligence-dashboard",
@@ -78,7 +78,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-29T00:05:51Z"
+    "updated_at": "2026-03-30T00:06:34Z"
   },
   {
     "name": "github-intelligence",
@@ -91,7 +91,33 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-28T22:56:12Z"
+    "updated_at": "2026-03-29T22:37:23Z"
+  },
+  {
+    "name": "githubification-agent0",
+    "full_name": "japer-technology/githubification-agent0",
+    "html_url": "https://github.com/japer-technology/githubification-agent0",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://agent-zero.ai",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T07:58:53Z"
+  },
+  {
+    "name": "githubification-awesome",
+    "full_name": "japer-technology/githubification-awesome",
+    "html_url": "https://github.com/japer-technology/githubification-awesome",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T07:51:51Z"
   },
   {
     "name": "gmi-youtube",
@@ -104,7 +130,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-28T06:29:06Z"
+    "updated_at": "2026-03-29T06:33:20Z"
   },
   {
     "name": "an-overview",
@@ -120,7 +146,33 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-03-28T06:18:49Z"
+    "updated_at": "2026-03-29T06:22:47Z"
+  },
+  {
+    "name": "github-n8n-intelligence",
+    "full_name": "japer-technology/github-n8n-intelligence",
+    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
+    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T05:06:31Z"
+  },
+  {
+    "name": "githubification",
+    "full_name": "japer-technology/githubification",
+    "html_url": "https://github.com/japer-technology/githubification",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T02:24:42Z"
   },
   {
     "name": "githubification-hermes-agent",
@@ -160,19 +212,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-27T20:09:46Z"
-  },
-  {
-    "name": "githubification-gstack",
-    "full_name": "japer-technology/githubification-gstack",
-    "html_url": "https://github.com/japer-technology/githubification-gstack",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-27T20:06:59Z"
   },
   {
     "name": "github-intelligence-supervisor",
@@ -563,19 +602,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-18T11:00:02Z"
-  },
-  {
-    "name": "githubification-agent0",
-    "full_name": "japer-technology/githubification-agent0",
-    "html_url": "https://github.com/japer-technology/githubification-agent0",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://agent-zero.ai",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-18T11:00:00Z"
   },
   {
     "name": "githubification-openai-agents-python",
