@@ -1,7 +1,7 @@
 {
   "org": "japer-technology",
-  "title": "Japer Technology Public Fabric",
-  "tagline": "A living catalog of the public repositories published by Japer Technology.",
+  "title": "Japer Technology's GitHub",
+  "tagline": "An overview of the public repositories published by Japer Technology.",
   "intro": "This site is the GitHub Pages front door for the Japer Technology public repo ecosystem. It is designed to show every public repository while still allowing hand-written summaries for the repos that matter most.",
   "featured": [
     "an-overview",
