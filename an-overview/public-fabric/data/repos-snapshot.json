@@ -1,99 +1,16 @@
 [
   {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-04-01T04:55:35Z"
-  },
-  {
     "name": "github-gstack-intelligence",
     "full_name": "japer-technology/github-gstack-intelligence",
     "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
-    "description": "\ud83e\udde0garrytan/gstack using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "description": "\ud83e\udde0garrytan/gstack using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
     "homepage": "",
     "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-04-01T04:23:32Z"
-  },
-  {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-04-01T00:30:44Z"
-  },
-  {
-    "name": "githubification-gstack",
-    "full_name": "japer-technology/githubification-gstack",
-    "html_url": "https://github.com/japer-technology/githubification-gstack",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-04-01T00:10:23Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-04-01T00:07:26Z"
-  },
-  {
-    "name": "gmi-youtube",
-    "full_name": "japer-technology/gmi-youtube",
-    "html_url": "https://github.com/japer-technology/gmi-youtube",
-    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/gmi-youtube",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-31T06:38:52Z"
-  },
-  {
-    "name": "githubification",
-    "full_name": "japer-technology/githubification",
-    "html_url": "https://github.com/japer-technology/githubification",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Go Template",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-31T01:37:55Z"
+    "updated_at": "2026-04-02T05:44:33Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -120,7 +37,103 @@
       "openai",
       "typescript"
     ],
-    "updated_at": "2026-03-30T21:55:58Z"
+    "updated_at": "2026-04-02T01:25:31Z"
+  },
+  {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-04-02T00:25:45Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-02T00:05:55Z"
+  },
+  {
+    "name": "githubification-claude-code",
+    "full_name": "japer-technology/githubification-claude-code",
+    "html_url": "https://github.com/japer-technology/githubification-claude-code",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://code.claude.com/docs/en/overview",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-01T21:03:04Z"
+  },
+  {
+    "name": "gmi-youtube",
+    "full_name": "japer-technology/gmi-youtube",
+    "html_url": "https://github.com/japer-technology/gmi-youtube",
+    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/gmi-youtube",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-01T06:45:48Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-04-01T06:31:54Z"
+  },
+  {
+    "name": "githubification-gstack",
+    "full_name": "japer-technology/githubification-gstack",
+    "html_url": "https://github.com/japer-technology/githubification-gstack",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-01T00:10:23Z"
+  },
+  {
+    "name": "githubification",
+    "full_name": "japer-technology/githubification",
+    "html_url": "https://github.com/japer-technology/githubification",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Go Template",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-31T01:37:55Z"
   },
   {
     "name": "githubification-pi-skills",
@@ -578,12 +591,12 @@
     "updated_at": "2026-03-18T11:02:00Z"
   },
   {
-    "name": "githubification-camel",
-    "full_name": "japer-technology/githubification-camel",
-    "html_url": "https://github.com/japer-technology/githubification-camel",
+    "name": "githubification-ironclaw",
+    "full_name": "japer-technology/githubification-ironclaw",
+    "html_url": "https://github.com/japer-technology/githubification-ironclaw",
     "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://docs.camel-ai.org/",
-    "language": "Python",
+    "homepage": "https://www.ironclaw.com",
+    "language": "Rust",
     "stargazers_count": 0,
     "fork": true,
     "archived": false,
@@ -591,12 +604,12 @@
     "updated_at": "2026-03-18T11:01:32Z"
   },
   {
-    "name": "githubification-ironclaw",
-    "full_name": "japer-technology/githubification-ironclaw",
-    "html_url": "https://github.com/japer-technology/githubification-ironclaw",
+    "name": "githubification-camel",
+    "full_name": "japer-technology/githubification-camel",
+    "html_url": "https://github.com/japer-technology/githubification-camel",
     "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://www.ironclaw.com",
-    "language": "Rust",
+    "homepage": "https://docs.camel-ai.org/",
+    "language": "Python",
     "stargazers_count": 0,
     "fork": true,
     "archived": false,
