@@ -12,7 +12,7 @@
     "topics": [
       "website"
     ],
-    "updated_at": "2026-04-03T00:27:16Z"
+    "updated_at": "2026-04-04T00:25:45Z"
   },
   {
     "name": "github-intelligence-dashboard",
@@ -25,36 +25,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-04-03T00:06:45Z"
-  },
-  {
-    "name": "gmi-youtube",
-    "full_name": "japer-technology/gmi-youtube",
-    "html_url": "https://github.com/japer-technology/gmi-youtube",
-    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/gmi-youtube",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-04-02T06:36:50Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-04-02T06:24:06Z"
+    "updated_at": "2026-04-04T00:05:47Z"
   },
   {
     "name": "github-gstack-intelligence",
@@ -67,7 +38,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-04-02T05:44:33Z"
+    "updated_at": "2026-04-03T23:40:51Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -76,7 +47,7 @@
     "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
     "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
     "language": "TypeScript",
-    "stargazers_count": 4,
+    "stargazers_count": 5,
     "fork": true,
     "archived": false,
     "topics": [
@@ -94,7 +65,36 @@
       "openai",
       "typescript"
     ],
-    "updated_at": "2026-04-02T01:25:31Z"
+    "updated_at": "2026-04-03T08:34:59Z"
+  },
+  {
+    "name": "gmi-youtube",
+    "full_name": "japer-technology/gmi-youtube",
+    "html_url": "https://github.com/japer-technology/gmi-youtube",
+    "description": "\ud83e\udde0GMI and YouTube using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/gmi-youtube",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-03T06:36:07Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-04-03T06:23:46Z"
   },
   {
     "name": "githubification-claude-code",
