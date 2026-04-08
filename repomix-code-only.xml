@@ -105,7 +105,7 @@ This section contains the contents of the repository's files.
 
 <file path=".github/workflows/github-minimum-intelligence-agent.yml">
 # ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║  GitHub Minimum Intelligence — Agent Workflow (Version 1.0.6)                ║
+# ║  GitHub Minimum Intelligence — Agent Workflow (Version 1.1.4)                ║
 # ║                                                                              ║
 # ║  An AI agent that lives inside your GitHub repository. It uses Issues as     ║
 # ║  a conversational UI, Git for persistent memory, and Actions as its only     ║
@@ -182,7 +182,7 @@ on:
 # ──────────────────────────────────────────────────────────────────────────────
 permissions:
   contents: write   # Commit agent responses, session state, and installed files to the repo.
-  issues: write     # Post AI replies as issue comments and add reaction indicators (🚀 / 👍).
+  issues: write     # Post AI replies as issue comments and add reaction indicators (� / �).
   actions: write    # Allow the run-install job to push commits that subsequently trigger workflows.
   pages: write      # Upload and deploy the agent's public-fabric site to GitHub Pages.
   id-token: write   # Required by actions/deploy-pages for secure OIDC-based Pages deployment.
@@ -227,7 +227,7 @@ jobs:
         run: |
           if [ ! -d ".github-minimum-intelligence" ]; then
             echo "action=install" >> "$GITHUB_OUTPUT"
-            echo "📦 .github-minimum-intelligence not found — will install."
+            echo "� .github-minimum-intelligence not found — will install."
           else
             LOCAL_VERSION="0.0.0"
             if [ -f ".github-minimum-intelligence/VERSION" ]; then
@@ -304,7 +304,11 @@ jobs:
 
           if [ "$ACTION" = "upgrade" ]; then
             # Back up user-customised files before replacing framework files.
+            # Always start with a clean backup directory — a stale backup from a
+            # previous run (on persistent runners) would cause cp -R to nest
+            # directories inside themselves (.pi/.pi/.pi).
             BACKUP="/tmp/mi-backup"
+            rm -rf "$BACKUP"
             mkdir -p "$BACKUP"
             if [ -f "$TARGET/AGENTS.md" ]; then cp "$TARGET/AGENTS.md" "$BACKUP/AGENTS.md"; fi
             if [ -d "$TARGET/.pi" ];       then cp -R "$TARGET/.pi" "$BACKUP/.pi"; fi
@@ -317,9 +321,18 @@ jobs:
             rm -rf "$TARGET/state"
 
             # Restore user-customised files from backup.
+            # Remove destination dirs first so cp -R creates them fresh
+            # instead of nesting the source inside an existing directory.
             if [ -f "$BACKUP/AGENTS.md" ]; then cp "$BACKUP/AGENTS.md" "$TARGET/AGENTS.md"; fi
-            if [ -d "$BACKUP/.pi" ];       then cp -R "$BACKUP/.pi" "$TARGET/.pi"; fi
-            if [ -d "$BACKUP/state" ];     then cp -R "$BACKUP/state" "$TARGET/state"; fi
+            if [ -d "$BACKUP/.pi" ];       then rm -rf "$TARGET/.pi"; cp -R "$BACKUP/.pi" "$TARGET/.pi"; fi
+            if [ -d "$BACKUP/state" ];     then rm -rf "$TARGET/state"; cp -R "$BACKUP/state" "$TARGET/state"; fi
+
+            # Defensive cleanup: remove any nested .pi directories that may have
+            # been created by prior runs affected by the cp -R nesting bug.
+            if [ -d "$TARGET/.pi/.pi" ]; then
+              echo "⚠️  Removing nested .pi/.pi directory (artifact of prior nesting bug)."
+              rm -rf "$TARGET/.pi/.pi"
+            fi
           else
             # Fresh install.
             cp -R "$EXTRACTED/$TARGET" "$TARGET"
@@ -336,12 +349,13 @@ jobs:
           fi
 
       # 4. Ensure common ignore patterns are present in .gitignore so that
-      #    node_modules and OS junk files never get committed.
+      #    node_modules, OS junk files, and the pi agent's auto-created .pi/
+      #    directory at the repo root never get committed.
       - name: Ensure .gitignore entries
         if: steps.check-folder.outputs.action != 'skip'
         run: |
           touch .gitignore
-          for entry in "node_modules/" ".github-minimum-intelligence/node_modules/" ".DS_Store"; do
+          for entry in "node_modules/" ".github-minimum-intelligence/node_modules/" ".DS_Store" "/.pi/"; do
             grep -qxF "$entry" .gitignore || echo "$entry" >> .gitignore
           done
 
@@ -386,7 +400,7 @@ jobs:
   # Purpose : The core AI agent. Reads the issue (or comment), loads the
   #           conversation session from git, sends it to the configured LLM,
   #           and posts the response back as an issue comment.
-  # Trigger : issues.opened OR issue_comment.created (ignoring bot comments).
+  # Trigger : issues.opened OR issue_comment.created (ignoring bot & PR comments).
   # Security: Only collaborators with write/maintain/admin access can trigger.
   # ────────────────────────────────────────────────────────────────────────────
   run-agent:
@@ -403,17 +417,18 @@ jobs:
     # Trigger guard:
     #   • Run on new issues.
     #   • Run on issue comments, BUT skip comments posted by bots (the agent
-    #     itself) to avoid infinite loops.
+    #     itself) to avoid infinite loops, AND skip comments on pull requests
+    #     (issue_comment fires for both issues and PRs).
     if: >-
       (github.event_name == 'issues')
-      || (github.event_name == 'issue_comment' && !endsWith(github.event.comment.user.login, '[bot]'))
+      || (github.event_name == 'issue_comment' && !github.event.issue.pull_request && !endsWith(github.event.comment.user.login, '[bot]'))
     steps:
 
       # 1. AUTHORIZATION — verify the actor has write-level (or higher) access
       #    to the repository. This prevents random users on public repos from
-      #    consuming your LLM credits. On success a 🚀 reaction is added to
+      #    consuming your LLM credits. On success a � reaction is added to
       #    signal the agent is working; the reaction state is saved to a temp
-      #    file so the agent can later replace it with 👍 on completion.
+      #    file so the agent can later replace it with � on completion.
       - name: Authorize
         id: authorize
         env:
@@ -429,9 +444,9 @@ jobs:
             exit 1
           fi
 
-          # Add a 🚀 "rocket" reaction to the comment or issue as a visual
+          # Add a � "rocket" reaction to the comment or issue as a visual
           # indicator that the agent has started processing. Save the reaction
-          # ID so the agent can swap it for 👍 when it finishes.
+          # ID so the agent can swap it for � when it finishes.
           if [[ "${{ github.event_name }}" == "issue_comment" ]]; then
             REACTION_ID=$(gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket --jq '.id' 2>/dev/null || echo "")
             if [[ -n "$REACTION_ID" ]]; then RID_JSON="\"$REACTION_ID\""; else RID_JSON="null"; fi
@@ -442,7 +457,7 @@ jobs:
             echo '{"reactionId":'"$RID_JSON"',"reactionTarget":"issue","commentId":null,"issueNumber":${{ github.event.issue.number }},"repo":"${{ github.repository }}"}' > /tmp/reaction-state.json
           fi
 
-      # 2. REJECTION FEEDBACK — if authorization failed, add a 👎 reaction so
+      # 2. REJECTION FEEDBACK — if authorization failed, add a � reaction so
       #    the user gets immediate visual feedback that their request was denied.
       - name: Reject
         if: ${{ failure() && steps.authorize.outcome == 'failure' }}
@@ -526,10 +541,7 @@ jobs:
   # Purpose : Publish the agent's public-fabric directory as a GitHub Pages
   #           site. This gives you a live web page powered by the agent's
   #           public output — no separate hosting needed.
-  # Trigger : Runs after every event (push, issues, issue_comment,
-  #           workflow_dispatch). Commits made by GITHUB_TOKEN do not fire
-  #           new push events, so this job must also run after the
-  #           agent/install jobs complete — not only on push.
+  # Trigger : push to main (i.e. after the agent commits, or any manual push).
   # Note    : Pages is automatically enabled on first run. If auto-enable
   #           fails, a warning guides the user to enable it manually.
   # ────────────────────────────────────────────────────────────────────────────
@@ -568,12 +580,12 @@ jobs:
       - name: Check public-fabric exists
         id: check-folder
         run: |
-          if [ -d "an-overview/public-fabric" ]; then
+          if [ -d ".github-minimum-intelligence/public-fabric" ]; then
             echo "folder_exists=true" >> "$GITHUB_OUTPUT"
             echo "✅ public-fabric directory found."
           else
             echo "folder_exists=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::Directory an-overview/public-fabric not found. Skipping Pages deployment. Run the installer first (Actions → Run workflow)."
+            echo "::warning::Directory .github-minimum-intelligence/public-fabric not found. Skipping Pages deployment. Run the installer first (Actions → Run workflow)."
           fi
 
       # 3. AUTO-ENABLE Pages — attempt to enable GitHub Pages via the API.
@@ -610,7 +622,7 @@ jobs:
         if: steps.check-folder.outputs.folder_exists == 'true' && steps.enable-pages.outputs.pages_active == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'an-overview/public-fabric'
+          path: '.github-minimum-intelligence/public-fabric'
 
       # 6. Deploy the uploaded artifact to GitHub Pages.
       - name: Deploy to GitHub Pages
@@ -2395,13 +2407,83 @@ async function main()
 <file path="an-overview/public-fabric/data/repos-snapshot.json">
 [
   {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-04-07T00:29:02Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-07T00:08:20Z"
+  },
+  {
+    "name": "github-gstack-intelligence",
+    "full_name": "japer-technology/github-gstack-intelligence",
+    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
+    "description": "\ud83e\udde0garrytan/gstack using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-06T09:34:21Z"
+  },
+  {
+    "name": "githubification-hermes-agent",
+    "full_name": "japer-technology/githubification-hermes-agent",
+    "html_url": "https://github.com/japer-technology/githubification-hermes-agent",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://hermes-agent.nousresearch.com",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-06T09:17:19Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-04-06T06:34:41Z"
+  },
+  {
     "name": "github-minimum-intelligence",
     "full_name": "japer-technology/github-minimum-intelligence",
     "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
     "description": "\ud83e\udde0Pi Mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow.",
     "homepage": "https://japer-technology.github.io/github-minimum-intelligence/",
     "language": "TypeScript",
-    "stargazers_count": 4,
+    "stargazers_count": 5,
     "fork": true,
     "archived": false,
     "topics": [
@@ -2419,64 +2501,33 @@ async function main()
       "openai",
       "typescript"
     ],
-    "updated_at": "2026-03-24T04:11:27Z"
+    "updated_at": "2026-04-06T06:26:12Z"
   },
   {
-    "name": "github-intelligence",
-    "full_name": "japer-technology/github-intelligence",
-    "html_url": "https://github.com/japer-technology/github-intelligence",
-    "description": "\ud83e\udde0UNDER DEVELOPMENT",
+    "name": "github-maximum-intelligence",
+    "full_name": "japer-technology/github-maximum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-maximum-intelligence",
+    "description": "\ud83e\udde0Pi Mono with Enhancements using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
     "homepage": "",
     "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-24T00:55:18Z"
+    "updated_at": "2026-04-05T13:04:01Z"
   },
   {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-03-24T00:22:16Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-03-24T00:11:26Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
+    "name": "github-n8n-intelligence",
+    "full_name": "japer-technology/github-n8n-intelligence",
+    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
+    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-24T00:04:30Z"
+    "updated_at": "2026-04-05T12:11:17Z"
   },
   {
     "name": "gmi-youtube",
@@ -2489,7 +2540,176 @@ async function main()
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-03-23T23:12:31Z"
+    "updated_at": "2026-04-05T12:06:10Z"
+  },
+  {
+    "name": "openclaw-using-GitHub-as-Infrastructure",
+    "full_name": "japer-technology/openclaw-using-GitHub-as-Infrastructure",
+    "html_url": "https://github.com/japer-technology/openclaw-using-GitHub-as-Infrastructure",
+    "description": "\u26a0\ufe0fPAST DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 2,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-04T14:02:25Z"
+  },
+  {
+    "name": "githubification-claude-code",
+    "full_name": "japer-technology/githubification-claude-code",
+    "html_url": "https://github.com/japer-technology/githubification-claude-code",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://code.claude.com/docs/en/overview",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-01T21:03:04Z"
+  },
+  {
+    "name": "githubification-gstack",
+    "full_name": "japer-technology/githubification-gstack",
+    "html_url": "https://github.com/japer-technology/githubification-gstack",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-04-01T00:10:23Z"
+  },
+  {
+    "name": "githubification",
+    "full_name": "japer-technology/githubification",
+    "html_url": "https://github.com/japer-technology/githubification",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Go Template",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-31T01:37:55Z"
+  },
+  {
+    "name": "githubification-pi-skills",
+    "full_name": "japer-technology/githubification-pi-skills",
+    "html_url": "https://github.com/japer-technology/githubification-pi-skills",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-30T21:41:13Z"
+  },
+  {
+    "name": "github-pi-mono-intelligence",
+    "full_name": "japer-technology/github-pi-mono-intelligence",
+    "html_url": "https://github.com/japer-technology/github-pi-mono-intelligence",
+    "description": "\ud83e\udde0pi-mono using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-30T00:45:30Z"
+  },
+  {
+    "name": "github-intelligence",
+    "full_name": "japer-technology/github-intelligence",
+    "html_url": "https://github.com/japer-technology/github-intelligence",
+    "description": "\ud83e\udde0GitHub as AI Infrastructure\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T22:37:23Z"
+  },
+  {
+    "name": "githubification-agent0",
+    "full_name": "japer-technology/githubification-agent0",
+    "html_url": "https://github.com/japer-technology/githubification-agent0",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://agent-zero.ai",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T07:58:53Z"
+  },
+  {
+    "name": "githubification-awesome",
+    "full_name": "japer-technology/githubification-awesome",
+    "html_url": "https://github.com/japer-technology/githubification-awesome",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-29T07:51:51Z"
+  },
+  {
+    "name": "githubification-superpowers",
+    "full_name": "japer-technology/githubification-superpowers",
+    "html_url": "https://github.com/japer-technology/githubification-superpowers",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-27T20:11:10Z"
+  },
+  {
+    "name": "githubification-paperclip",
+    "full_name": "japer-technology/githubification-paperclip",
+    "html_url": "https://github.com/japer-technology/githubification-paperclip",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://paperclip.ing",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-27T20:09:46Z"
+  },
+  {
+    "name": "github-intelligence-supervisor",
+    "full_name": "japer-technology/github-intelligence-supervisor",
+    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
+    "description": "\ud83e\udde0GtiHub Intelligence \ud83d\udea8 Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-26T21:14:20Z"
+  },
+  {
+    "name": "githubification-NemoClaw",
+    "full_name": "japer-technology/githubification-NemoClaw",
+    "html_url": "https://github.com/japer-technology/githubification-NemoClaw",
+    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
+    "homepage": "https://docs.nvidia.com/nemoclaw/latest/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-03-24T21:22:37Z"
   },
   {
     "name": "github-intelligence-emergency",
@@ -2503,19 +2723,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-23T03:38:15Z"
-  },
-  {
-    "name": "github-n8n-intelligence",
-    "full_name": "japer-technology/github-n8n-intelligence",
-    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
-    "description": "\ud83e\udde0N8N using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-22T04:50:39Z"
   },
   {
     "name": "github-intelligence-overwatch",
@@ -2622,19 +2829,6 @@ async function main()
     "updated_at": "2026-03-19T01:55:04Z"
   },
   {
-    "name": "github-maximum-intelligence",
-    "full_name": "japer-technology/github-maximum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-maximum-intelligence",
-    "description": "\ud83e\udde0Pi Mono with Enhancements using GitHub as Infrastructure. A repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-19T01:54:52Z"
-  },
-  {
     "name": "github-agenticana-intelligence",
     "full_name": "japer-technology/github-agenticana-intelligence",
     "html_url": "https://github.com/japer-technology/github-agenticana-intelligence",
@@ -2646,19 +2840,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-19T01:54:40Z"
-  },
-  {
-    "name": "github-intelligence-supervisor",
-    "full_name": "japer-technology/github-intelligence-supervisor",
-    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
-    "description": "\ud83e\udde0GtiHub Intelligence \ud83d\udea8 Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-19T01:30:17Z"
   },
   {
     "name": "githubification-picoclaw",
@@ -2830,12 +3011,12 @@ async function main()
     "updated_at": "2026-03-18T11:02:00Z"
   },
   {
-    "name": "githubification-ironclaw",
-    "full_name": "japer-technology/githubification-ironclaw",
-    "html_url": "https://github.com/japer-technology/githubification-ironclaw",
+    "name": "githubification-camel",
+    "full_name": "japer-technology/githubification-camel",
+    "html_url": "https://github.com/japer-technology/githubification-camel",
     "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://www.ironclaw.com",
-    "language": "Rust",
+    "homepage": "https://docs.camel-ai.org/",
+    "language": "Python",
     "stargazers_count": 0,
     "fork": true,
     "archived": false,
@@ -2843,12 +3024,12 @@ async function main()
     "updated_at": "2026-03-18T11:01:32Z"
   },
   {
-    "name": "githubification-camel",
-    "full_name": "japer-technology/githubification-camel",
-    "html_url": "https://github.com/japer-technology/githubification-camel",
+    "name": "githubification-ironclaw",
+    "full_name": "japer-technology/githubification-ironclaw",
+    "html_url": "https://github.com/japer-technology/githubification-ironclaw",
     "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://docs.camel-ai.org/",
-    "language": "Python",
+    "homepage": "https://www.ironclaw.com",
+    "language": "Rust",
     "stargazers_count": 0,
     "fork": true,
     "archived": false,
@@ -2882,19 +3063,6 @@ async function main()
     "updated_at": "2026-03-18T11:00:02Z"
   },
   {
-    "name": "githubification-agent0",
-    "full_name": "japer-technology/githubification-agent0",
-    "html_url": "https://github.com/japer-technology/githubification-agent0",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://agent-zero.ai",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-18T11:00:00Z"
-  },
-  {
     "name": "githubification-openai-agents-python",
     "full_name": "japer-technology/githubification-openai-agents-python",
     "html_url": "https://github.com/japer-technology/githubification-openai-agents-python",
@@ -2919,32 +3087,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-18T10:29:58Z"
-  },
-  {
-    "name": "githubification",
-    "full_name": "japer-technology/githubification",
-    "html_url": "https://github.com/japer-technology/githubification",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-18T10:17:28Z"
-  },
-  {
-    "name": "githubification-NemoClaw",
-    "full_name": "japer-technology/githubification-NemoClaw",
-    "html_url": "https://github.com/japer-technology/githubification-NemoClaw",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "https://docs.nvidia.com/nemoclaw/latest/",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-17T06:07:32Z"
   },
   {
     "name": "japer-technology.github.discussion",
@@ -2975,19 +3117,6 @@ async function main()
     "updated_at": "2026-03-17T05:22:53Z"
   },
   {
-    "name": "gmi-openrouter-stepfun-step-3-5-flash-free",
-    "full_name": "japer-technology/gmi-openrouter-stepfun-step-3-5-flash-free",
-    "html_url": "https://github.com/japer-technology/gmi-openrouter-stepfun-step-3-5-flash-free",
-    "description": "\ud83d\ude80An AI Agent called Sylow",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-16T07:24:59Z"
-  },
-  {
     "name": "github-fabric-openclaw",
     "full_name": "japer-technology/github-fabric-openclaw",
     "html_url": "https://github.com/japer-technology/github-fabric-openclaw",
@@ -2999,19 +3128,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-16T06:59:44Z"
-  },
-  {
-    "name": "githubification-pi-skills",
-    "full_name": "japer-technology/githubification-pi-skills",
-    "html_url": "https://github.com/japer-technology/githubification-pi-skills",
-    "description": "\u26a0\ufe0fUNDER GITHUBIFICATION",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-16T01:16:43Z"
   },
   {
     "name": "github-fabric",
@@ -3064,19 +3180,6 @@ async function main()
     "archived": false,
     "topics": [],
     "updated_at": "2026-03-15T12:50:39Z"
-  },
-  {
-    "name": "zzz-ghoc-v2",
-    "full_name": "japer-technology/zzz-ghoc-v2",
-    "html_url": "https://github.com/japer-technology/zzz-ghoc-v2",
-    "description": "\u26a0\ufe0fPAST DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 2,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-03-15T12:49:12Z"
   },
   {
     "name": "zzz-ghoc-v1",
@@ -3214,8 +3317,8 @@ async function main()
 <file path="an-overview/public-fabric/data/site.json">
 {
   "org": "japer-technology",
-  "title": "Japer Technology Public Fabric",
-  "tagline": "A living catalog of the public repositories published by Japer Technology.",
+  "title": "Japer Technology's GitHub",
+  "tagline": "An overview of the public repositories published by Japer Technology.",
   "intro": "This site is the GitHub Pages front door for the Japer Technology public repo ecosystem. It is designed to show every public repository while still allowing hand-written summaries for the repos that matter most.",
   "featured": [
     "an-overview",
