@@ -1,4 +1,4 @@
-# 🗺️ [japer-technology/an-overview](https://japer-technology.github.io/an-overview/)
+# 🛰️ [japer-technology/an-overview](https://japer-technology.github.io/an-overview/)
 
 An overview of all public repositories published by **Japer Technology Pty. Ltd.**
 
