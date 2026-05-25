@@ -1,24 +1,9 @@
 [
   {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-05-24T00:43:40Z"
-  },
-  {
     "name": "forgejo-society",
     "full_name": "japer-technology/forgejo-society",
     "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "Forgejo Society is a self-hosted, local-first cognitive forge using Forgejo on Ubuntu \ud83e\udde0 UNDER DEVELOPMENT",
+    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
     "homepage": "",
     "language": "TypeScript",
     "stargazers_count": 0,
@@ -36,7 +21,228 @@
       "forgejo-runner",
       "forgejo-theme"
     ],
-    "updated_at": "2026-05-23T15:23:08Z"
+    "updated_at": "2026-05-25T07:28:20Z"
+  },
+  {
+    "name": "forgejo-labour-git",
+    "full_name": "japer-technology/forgejo-labour-git",
+    "html_url": "https://github.com/japer-technology/forgejo-labour-git",
+    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised repositories.\u26a0\ufe0f UNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Go",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:26:47Z"
+  },
+  {
+    "name": "github-agenticana-intelligence",
+    "full_name": "japer-technology/github-agenticana-intelligence",
+    "html_url": "https://github.com/japer-technology/github-agenticana-intelligence",
+    "description": "\ud83e\udde0Agenticana within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-agenticana-intelligence/",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:23:08Z"
+  },
+  {
+    "name": "github-n8n-intelligence",
+    "full_name": "japer-technology/github-n8n-intelligence",
+    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
+    "description": "\ud83e\udde0N8N within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:22:59Z"
+  },
+  {
+    "name": "github-moltis-intelligence",
+    "full_name": "japer-technology/github-moltis-intelligence",
+    "html_url": "https://github.com/japer-technology/github-moltis-intelligence",
+    "description": "\ud83e\udde0Moltis within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:22:50Z"
+  },
+  {
+    "name": "github-nanoclaw-intelligence",
+    "full_name": "japer-technology/github-nanoclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-nanoclaw-intelligence",
+    "description": "\ud83e\udde0NanoClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:22:41Z"
+  },
+  {
+    "name": "github-pi-mono-intelligence",
+    "full_name": "japer-technology/github-pi-mono-intelligence",
+    "html_url": "https://github.com/japer-technology/github-pi-mono-intelligence",
+    "description": "\ud83e\udde0pi-mono within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:22:28Z"
+  },
+  {
+    "name": "github-zeroclaw-intelligence",
+    "full_name": "japer-technology/github-zeroclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-zeroclaw-intelligence",
+    "description": "\ud83e\udde0ZeroClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:22:18Z"
+  },
+  {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\ud83e\udde0 Ubuntu SysAdmin AI Agent  \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "pi-mono",
+      "ubuntu",
+      "ubuntu-automation"
+    ],
+    "updated_at": "2026-05-25T07:10:02Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi-Mono within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:06:10Z"
+  },
+  {
+    "name": "github-gstack-intelligence",
+    "full_name": "japer-technology/github-gstack-intelligence",
+    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
+    "description": "\ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.  \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "pi-mono",
+      "y-combinator"
+    ],
+    "updated_at": "2026-05-25T07:04:32Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T07:04:08Z"
+  },
+  {
+    "name": "github-intelligence-supervisor",
+    "full_name": "japer-technology/github-intelligence-supervisor",
+    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
+    "description": "\ud83e\udde0GtiHub Intelligence \ud83d\udea8 Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T00:58:17Z"
+  },
+  {
+    "name": "github-intelligence-emergency",
+    "full_name": "japer-technology/github-intelligence-emergency",
+    "html_url": "https://github.com/japer-technology/github-intelligence-emergency",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83c\udd98 Emergency",
+    "homepage": "https://japer-technology.github.io/github-intelligence-emergency",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T00:57:56Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence \ud83d\udda5\ufe0f Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T00:57:50Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\uddfa\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-05-25T00:56:42Z"
+  },
+  {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-05-24T09:09:37Z"
   },
   {
     "name": "developer-japer-io",
@@ -52,18 +258,5 @@
       "main-product"
     ],
     "updated_at": "2026-05-22T13:08:17Z"
-  },
-  {
-    "name": "forgejo-labour-git",
-    "full_name": "japer-technology/forgejo-labour-git",
-    "html_url": "https://github.com/japer-technology/forgejo-labour-git",
-    "description": "Forgejo Society Git Labour \ud83e\udde0 UNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-21T02:52:59Z"
   }
 ]
