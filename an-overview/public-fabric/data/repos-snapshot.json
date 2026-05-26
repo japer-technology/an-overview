@@ -1,5 +1,135 @@
 [
   {
+    "name": "github-society-intelligence",
+    "full_name": "japer-technology/github-society-intelligence",
+    "html_url": "https://github.com/japer-technology/github-society-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local multi-AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "forge-ai",
+      "minsky",
+      "repo-ai"
+    ],
+    "updated_at": "2026-05-26T05:59:07Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-05-26T05:52:13Z"
+  },
+  {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.  \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ubuntu-ai",
+      "ubuntu-root"
+    ],
+    "updated_at": "2026-05-25T12:47:47Z"
+  },
+  {
+    "name": "forgejo-society-aw-labour",
+    "full_name": "japer-technology/forgejo-society-aw-labour",
+    "html_url": "https://github.com/japer-technology/forgejo-society-aw-labour",
+    "description": "\ud83d\udd25 Forgejo Society Agentic Workflows Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised AI agents that include labour.\u26a0\ufe0f UNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T12:42:11Z"
+  },
+  {
+    "name": "github-gstack-intelligence",
+    "full_name": "japer-technology/github-gstack-intelligence",
+    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
+    "description": "\ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.  \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "pi-mono",
+      "y-combinator"
+    ],
+    "updated_at": "2026-05-25T11:47:26Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-25T10:49:41Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-05-25T10:12:21Z"
+  },
+  {
+    "name": "developer-japer-io",
+    "full_name": "japer-technology/developer-japer-io",
+    "html_url": "https://github.com/japer-technology/developer-japer-io",
+    "description": "\ud83d\udee0\ufe0f The JAPER API provides developers with advanced encryption, decryption, validation, and secure resource management via RESTful endpoints.",
+    "homepage": "https://developer.japer.io",
+    "language": "TypeScript",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "main-product"
+    ],
+    "updated_at": "2026-05-25T08:28:39Z"
+  },
+  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -13,7 +143,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-05-25T08:00:03Z"
+    "updated_at": "2026-05-25T08:26:12Z"
   },
   {
     "name": "github-intelligence-supervisor",
@@ -59,21 +189,6 @@
     "updated_at": "2026-05-25T07:46:15Z"
   },
   {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-05-25T07:40:39Z"
-  },
-  {
     "name": "forgejo-society-git-labour",
     "full_name": "japer-technology/forgejo-society-git-labour",
     "html_url": "https://github.com/japer-technology/forgejo-society-git-labour",
@@ -87,30 +202,6 @@
       "forgejo-runner"
     ],
     "updated_at": "2026-05-25T07:33:36Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-05-25T07:28:20Z"
   },
   {
     "name": "github-agenticana-intelligence",
@@ -191,53 +282,6 @@
     "updated_at": "2026-05-25T07:22:18Z"
   },
   {
-    "name": "ubuntu-zombie",
-    "full_name": "japer-technology/ubuntu-zombie",
-    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\ud83e\udde0 Ubuntu SysAdmin AI Agent  \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "pi-mono",
-      "ubuntu",
-      "ubuntu-automation"
-    ],
-    "updated_at": "2026-05-25T07:10:02Z"
-  },
-  {
-    "name": "github-gstack-intelligence",
-    "full_name": "japer-technology/github-gstack-intelligence",
-    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
-    "description": "\ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.  \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "pi-mono",
-      "y-combinator"
-    ],
-    "updated_at": "2026-05-25T07:04:32Z"
-  },
-  {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:04:08Z"
-  },
-  {
     "name": "japer-technology.github.io",
     "full_name": "japer-technology/japer-technology.github.io",
     "html_url": "https://github.com/japer-technology/japer-technology.github.io",
@@ -251,20 +295,5 @@
       "website"
     ],
     "updated_at": "2026-05-24T09:09:37Z"
-  },
-  {
-    "name": "developer-japer-io",
-    "full_name": "japer-technology/developer-japer-io",
-    "html_url": "https://github.com/japer-technology/developer-japer-io",
-    "description": "\ud83d\udee0\ufe0fThe JAPER API provides developers with advanced encryption, decryption, validation, and secure resource management via RESTful endpoints.",
-    "homepage": "https://developer.japer.io",
-    "language": "TypeScript",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "main-product"
-    ],
-    "updated_at": "2026-05-22T13:08:17Z"
   }
 ]
