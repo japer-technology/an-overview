@@ -1,5 +1,21 @@
 [
   {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.  \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ubuntu-ai",
+      "ubuntu-root"
+    ],
+    "updated_at": "2026-05-27T07:15:59Z"
+  },
+  {
     "name": "github-society-intelligence",
     "full_name": "japer-technology/github-society-intelligence",
     "html_url": "https://github.com/japer-technology/github-society-intelligence",
@@ -14,7 +30,36 @@
       "minsky",
       "repo-ai"
     ],
-    "updated_at": "2026-05-26T05:59:07Z"
+    "updated_at": "2026-05-27T01:48:51Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-26T10:55:49Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-05-26T07:08:27Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -30,22 +75,6 @@
       "github-ai"
     ],
     "updated_at": "2026-05-26T05:52:13Z"
-  },
-  {
-    "name": "ubuntu-zombie",
-    "full_name": "japer-technology/ubuntu-zombie",
-    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.  \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ubuntu-ai",
-      "ubuntu-root"
-    ],
-    "updated_at": "2026-05-25T12:47:47Z"
   },
   {
     "name": "forgejo-society-aw-labour",
@@ -76,19 +105,6 @@
       "y-combinator"
     ],
     "updated_at": "2026-05-25T11:47:26Z"
-  },
-  {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T10:49:41Z"
   },
   {
     "name": "forgejo-society",
@@ -128,22 +144,6 @@
       "main-product"
     ],
     "updated_at": "2026-05-25T08:28:39Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-05-25T08:26:12Z"
   },
   {
     "name": "github-intelligence-supervisor",
