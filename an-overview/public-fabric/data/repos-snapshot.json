@@ -13,7 +13,23 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-05-27T07:15:59Z"
+    "updated_at": "2026-05-28T05:49:22Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-05-27T07:22:30Z"
   },
   {
     "name": "github-society-intelligence",
@@ -44,22 +60,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-05-26T10:55:49Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-05-26T07:08:27Z"
   },
   {
     "name": "github-minimum-intelligence",
