@@ -1,5 +1,18 @@
 [
   {
+    "name": "the-brain-actuator",
+    "full_name": "japer-technology/the-brain-actuator",
+    "html_url": "https://github.com/japer-technology/the-brain-actuator",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT  A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-29T05:17:37Z"
+  },
+  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -13,7 +26,70 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-05-28T05:49:22Z"
+    "updated_at": "2026-05-29T03:59:02Z"
+  },
+  {
+    "name": "flat-email",
+    "full_name": "japer-technology/flat-email",
+    "html_url": "https://github.com/japer-technology/flat-email",
+    "description": "Extracts mail from every provider and stores messages, attachments, threads, and metadata as portable, searchable, filesystem-native files you control. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-29T02:25:48Z"
+  },
+  {
+    "name": "macos-zombie",
+    "full_name": "japer-technology/macos-zombie",
+    "html_url": "https://github.com/japer-technology/macos-zombie",
+    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-29T01:47:33Z"
+  },
+  {
+    "name": "windows-zombie",
+    "full_name": "japer-technology/windows-zombie",
+    "html_url": "https://github.com/japer-technology/windows-zombie",
+    "description": "\ud83e\udde0 Windows 11 Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-29T01:26:16Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-05-28T23:18:36Z"
   },
   {
     "name": "an-overview",
@@ -29,7 +105,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-05-27T07:22:30Z"
+    "updated_at": "2026-05-28T07:15:50Z"
   },
   {
     "name": "github-society-intelligence",
@@ -105,30 +181,6 @@
       "y-combinator"
     ],
     "updated_at": "2026-05-25T11:47:26Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-05-25T10:12:21Z"
   },
   {
     "name": "developer-japer-io",
