@@ -1,18 +1,5 @@
 [
   {
-    "name": "flat-email",
-    "full_name": "japer-technology/flat-email",
-    "html_url": "https://github.com/japer-technology/flat-email",
-    "description": "Extracts mail from every provider and stores messages, attachments, threads, and metadata as portable, searchable, filesystem-native files you control. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-29T11:01:58Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -26,7 +13,74 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-05-29T08:11:47Z"
+    "updated_at": "2026-05-31T05:23:12Z"
+  },
+  {
+    "name": "windows-zombie",
+    "full_name": "japer-technology/windows-zombie",
+    "html_url": "https://github.com/japer-technology/windows-zombie",
+    "description": "\ud83e\udde0 Windows 11 Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-31T04:25:36Z"
+  },
+  {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-05-31T03:47:31Z"
+  },
+  {
+    "name": "flat-email",
+    "full_name": "japer-technology/flat-email",
+    "html_url": "https://github.com/japer-technology/flat-email",
+    "description": "Full ownership of your mail by turning it into plain files you can read, search, back up, and process with any tool you already use. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-31T03:46:15Z"
+  },
+  {
+    "name": "macos-zombie",
+    "full_name": "japer-technology/macos-zombie",
+    "html_url": "https://github.com/japer-technology/macos-zombie",
+    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-31T03:19:43Z"
+  },
+  {
+    "name": "the-brain-actuator",
+    "full_name": "japer-technology/the-brain-actuator",
+    "html_url": "https://github.com/japer-technology/the-brain-actuator",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT  A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-05-31T03:03:52Z"
   },
   {
     "name": "an-overview",
@@ -42,46 +96,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-05-29T07:15:53Z"
-  },
-  {
-    "name": "the-brain-actuator",
-    "full_name": "japer-technology/the-brain-actuator",
-    "html_url": "https://github.com/japer-technology/the-brain-actuator",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT  A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-29T05:17:37Z"
-  },
-  {
-    "name": "macos-zombie",
-    "full_name": "japer-technology/macos-zombie",
-    "html_url": "https://github.com/japer-technology/macos-zombie",
-    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-29T01:47:33Z"
-  },
-  {
-    "name": "windows-zombie",
-    "full_name": "japer-technology/windows-zombie",
-    "html_url": "https://github.com/japer-technology/windows-zombie",
-    "description": "\ud83e\udde0 Windows 11 Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-29T01:26:16Z"
+    "updated_at": "2026-05-30T06:57:44Z"
   },
   {
     "name": "forgejo-society",
@@ -332,20 +347,5 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-05-25T07:22:18Z"
-  },
-  {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-05-24T09:09:37Z"
   }
 ]
