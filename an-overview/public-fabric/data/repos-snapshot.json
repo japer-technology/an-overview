@@ -13,7 +13,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-01T07:12:25Z"
+    "updated_at": "2026-06-02T06:53:07Z"
   },
   {
     "name": "flat-email",
@@ -26,20 +26,20 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-06-01T05:44:47Z"
+    "updated_at": "2026-06-02T02:56:05Z"
   },
   {
-    "name": "the-brain-actuator",
-    "full_name": "japer-technology/the-brain-actuator",
-    "html_url": "https://github.com/japer-technology/the-brain-actuator",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT  A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
+    "name": "macos-zombie",
+    "full_name": "japer-technology/macos-zombie",
+    "html_url": "https://github.com/japer-technology/macos-zombie",
+    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
     "homepage": "",
-    "language": "TypeScript",
+    "language": "Python",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-06-01T03:20:08Z"
+    "updated_at": "2026-06-02T01:36:56Z"
   },
   {
     "name": "an-overview",
@@ -55,7 +55,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-05-31T09:58:57Z"
+    "updated_at": "2026-06-02T01:13:38Z"
   },
   {
     "name": "windows-zombie",
@@ -68,7 +68,20 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-05-31T04:25:36Z"
+    "updated_at": "2026-06-01T23:44:54Z"
+  },
+  {
+    "name": "the-brain-actuator",
+    "full_name": "japer-technology/the-brain-actuator",
+    "html_url": "https://github.com/japer-technology/the-brain-actuator",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT  A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-01T03:20:08Z"
   },
   {
     "name": "japer-technology.github.io",
@@ -84,19 +97,6 @@
       "website"
     ],
     "updated_at": "2026-05-31T03:47:31Z"
-  },
-  {
-    "name": "macos-zombie",
-    "full_name": "japer-technology/macos-zombie",
-    "html_url": "https://github.com/japer-technology/macos-zombie",
-    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-31T03:19:43Z"
   },
   {
     "name": "forgejo-society",
