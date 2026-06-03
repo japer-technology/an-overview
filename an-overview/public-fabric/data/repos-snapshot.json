@@ -10,10 +10,35 @@
     "fork": false,
     "archived": false,
     "topics": [
+      "ai-agent",
+      "ai-assistant",
+      "autonomous-agent",
+      "chatbot",
+      "cli",
+      "linux",
+      "llm",
+      "self-hosted",
+      "tailscale",
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-02T06:53:07Z"
+    "updated_at": "2026-06-03T07:36:33Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-02T07:34:23Z"
   },
   {
     "name": "flat-email",
@@ -40,22 +65,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-02T01:36:56Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-02T01:13:38Z"
   },
   {
     "name": "windows-zombie",
