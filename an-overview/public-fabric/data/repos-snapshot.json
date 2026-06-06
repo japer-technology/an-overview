@@ -1,5 +1,21 @@
 [
   {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-05T07:25:31Z"
+  },
+  {
     "name": "github-minimum-intelligence",
     "full_name": "japer-technology/github-minimum-intelligence",
     "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
@@ -75,22 +91,6 @@
       "forgejo-theme"
     ],
     "updated_at": "2026-06-04T22:56:36Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-04T07:33:49Z"
   },
   {
     "name": "flat-email",
