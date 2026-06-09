@@ -1,5 +1,80 @@
 [
   {
+    "name": "macos-zombie",
+    "full_name": "japer-technology/macos-zombie",
+    "html_url": "https://github.com/japer-technology/macos-zombie",
+    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-09T02:12:09Z"
+  },
+  {
+    "name": "windows-zombie",
+    "full_name": "japer-technology/windows-zombie",
+    "html_url": "https://github.com/japer-technology/windows-zombie",
+    "description": "\ud83e\udde0 Windows 11 Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-09T02:10:42Z"
+  },
+  {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "ai-assistant",
+      "autonomous-agent",
+      "chatbot",
+      "cli",
+      "linux",
+      "llm",
+      "self-hosted",
+      "tailscale",
+      "ubuntu-ai",
+      "ubuntu-root"
+    ],
+    "updated_at": "2026-06-09T00:32:43Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-06-08T22:48:56Z"
+  },
+  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -13,7 +88,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-07T07:20:30Z"
+    "updated_at": "2026-06-08T07:36:45Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -44,55 +119,6 @@
     "updated_at": "2026-06-05T01:27:32Z"
   },
   {
-    "name": "ubuntu-zombie",
-    "full_name": "japer-technology/ubuntu-zombie",
-    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.  \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ai-assistant",
-      "autonomous-agent",
-      "chatbot",
-      "cli",
-      "linux",
-      "llm",
-      "self-hosted",
-      "tailscale",
-      "ubuntu-ai",
-      "ubuntu-root"
-    ],
-    "updated_at": "2026-06-05T00:34:09Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.\u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-06-04T22:56:36Z"
-  },
-  {
     "name": "flat-email",
     "full_name": "japer-technology/flat-email",
     "html_url": "https://github.com/japer-technology/flat-email",
@@ -104,32 +130,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-02T02:56:05Z"
-  },
-  {
-    "name": "macos-zombie",
-    "full_name": "japer-technology/macos-zombie",
-    "html_url": "https://github.com/japer-technology/macos-zombie",
-    "description": "\ud83e\udde0 MacOS Zombie adds a private, root-capable AI Systems Administrator account to a Mac so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-02T01:36:56Z"
-  },
-  {
-    "name": "windows-zombie",
-    "full_name": "japer-technology/windows-zombie",
-    "html_url": "https://github.com/japer-technology/windows-zombie",
-    "description": "\ud83e\udde0 Windows 11 Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-01T23:44:54Z"
   },
   {
     "name": "japer-technology.github.io",
