@@ -1,16 +1,34 @@
 [
   {
-    "name": "lmstudio-nexus",
-    "full_name": "japer-technology/lmstudio-nexus",
-    "html_url": "https://github.com/japer-technology/lmstudio-nexus",
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
     "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
     "homepage": "",
-    "language": null,
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-11T06:50:44Z"
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-06-12T06:47:28Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-11T07:36:05Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -77,22 +95,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-10T11:45:56Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-10T07:25:06Z"
   },
   {
     "name": "forgejo-society",
