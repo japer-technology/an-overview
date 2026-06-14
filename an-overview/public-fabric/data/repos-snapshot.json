@@ -5,14 +5,30 @@
     "html_url": "https://github.com/japer-technology/lmstudio-vampire",
     "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
     "homepage": "",
-    "language": "Python",
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [
       "lmstudio"
     ],
-    "updated_at": "2026-06-13T07:14:08Z"
+    "updated_at": "2026-06-14T07:28:41Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-13T07:15:25Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -38,22 +54,6 @@
       "ubuntu-root"
     ],
     "updated_at": "2026-06-13T02:55:11Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-12T07:33:44Z"
   },
   {
     "name": "github-openclaw-intelligence",
