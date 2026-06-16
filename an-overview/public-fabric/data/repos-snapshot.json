@@ -12,23 +12,20 @@
     "topics": [
       "lmstudio"
     ],
-    "updated_at": "2026-06-15T01:28:48Z"
+    "updated_at": "2026-06-16T07:14:32Z"
   },
   {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "Software for dentists",
+    "homepage": null,
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-14T07:32:41Z"
+    "topics": [],
+    "updated_at": "2026-06-16T07:08:03Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -53,7 +50,23 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-13T02:55:11Z"
+    "updated_at": "2026-06-16T01:14:45Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-15T07:52:31Z"
   },
   {
     "name": "github-openclaw-intelligence",
