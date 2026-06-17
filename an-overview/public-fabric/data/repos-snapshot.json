@@ -1,33 +1,5 @@
 [
   {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-06-16T07:14:32Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "Software for dentists",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-16T07:08:03Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -50,7 +22,22 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-16T01:14:45Z"
+    "updated_at": "2026-06-16T21:24:57Z"
+  },
+  {
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-06-16T21:22:01Z"
   },
   {
     "name": "an-overview",
@@ -66,7 +53,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-15T07:52:31Z"
+    "updated_at": "2026-06-16T07:52:58Z"
+  },
+  {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "Software for dentists",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-16T07:08:03Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -306,45 +306,6 @@
       "forgejo-runner"
     ],
     "updated_at": "2026-05-25T07:33:36Z"
-  },
-  {
-    "name": "github-agenticana-intelligence",
-    "full_name": "japer-technology/github-agenticana-intelligence",
-    "html_url": "https://github.com/japer-technology/github-agenticana-intelligence",
-    "description": "\ud83e\udde0Agenticana within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-agenticana-intelligence/",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:23:08Z"
-  },
-  {
-    "name": "github-n8n-intelligence",
-    "full_name": "japer-technology/github-n8n-intelligence",
-    "html_url": "https://github.com/japer-technology/github-n8n-intelligence",
-    "description": "\ud83e\udde0N8N within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:22:59Z"
-  },
-  {
-    "name": "github-moltis-intelligence",
-    "full_name": "japer-technology/github-moltis-intelligence",
-    "html_url": "https://github.com/japer-technology/github-moltis-intelligence",
-    "description": "\ud83e\udde0Moltis within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:22:50Z"
   },
   {
     "name": "github-nanoclaw-intelligence",
