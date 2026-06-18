@@ -1,5 +1,18 @@
 [
   {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "Software for dentists",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-17T20:52:15Z"
+  },
+  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -22,7 +35,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-16T21:24:57Z"
+    "updated_at": "2026-06-17T11:03:45Z"
   },
   {
     "name": "lmstudio-vampire",
@@ -37,7 +50,7 @@
     "topics": [
       "lmstudio"
     ],
-    "updated_at": "2026-06-16T21:22:01Z"
+    "updated_at": "2026-06-17T10:53:12Z"
   },
   {
     "name": "an-overview",
@@ -53,20 +66,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-16T07:52:58Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "Software for dentists",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-16T07:08:03Z"
+    "updated_at": "2026-06-17T07:45:16Z"
   },
   {
     "name": "github-openclaw-intelligence",
