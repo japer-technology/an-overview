@@ -1,20 +1,5 @@
 [
   {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-06-20T03:03:41Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -37,20 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-19T23:29:10Z"
-  },
-  {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-19T22:24:23Z"
+    "updated_at": "2026-06-20T08:31:39Z"
   },
   {
     "name": "an-overview",
@@ -66,7 +38,35 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-19T07:47:50Z"
+    "updated_at": "2026-06-20T07:17:04Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-06-20T03:03:41Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-19T22:24:23Z"
   },
   {
     "name": "lmstudio-vampire",
