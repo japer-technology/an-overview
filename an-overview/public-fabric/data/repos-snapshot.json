@@ -1,5 +1,92 @@
 [
   {
+    "name": "github-society-intelligence",
+    "full_name": "japer-technology/github-society-intelligence",
+    "html_url": "https://github.com/japer-technology/github-society-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu + Forgejo + Minsky + Chollet",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "forge-ai",
+      "minsky",
+      "repo-ai"
+    ],
+    "updated_at": "2026-06-23T05:06:13Z"
+  },
+  {
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-06-23T01:56:11Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-06-23T01:43:16Z"
+  },
+  {
+    "name": "aws-lambda-nodejs-catch-all",
+    "full_name": "japer-technology/aws-lambda-nodejs-catch-all",
+    "html_url": "https://github.com/japer-technology/aws-lambda-nodejs-catch-all",
+    "description": "A universal AWS Lambda entry point implemented in Node.js. It inspects each incoming event and automatically routes it to the appropriate handler based on the invocation source.Catch-all AWS Lambda (Node.js) function that receives, logs, and routes every AWS event trigger through a single, unified handler.",
+    "homepage": "https://aws.amazon.com",
+    "language": "JavaScript",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "aws-lambda-node"
+    ],
+    "updated_at": "2026-06-22T23:46:10Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-22T07:54:26Z"
+  },
+  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -23,22 +110,6 @@
       "ubuntu-root"
     ],
     "updated_at": "2026-06-21T23:52:38Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-21T07:34:50Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -69,21 +140,6 @@
     "updated_at": "2026-06-19T22:24:23Z"
   },
   {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-06-18T12:02:11Z"
-  },
-  {
     "name": "full-stack-dentist",
     "full_name": "japer-technology/full-stack-dentist",
     "html_url": "https://github.com/japer-technology/full-stack-dentist",
@@ -108,30 +164,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-10T11:45:56Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-06-10T03:05:48Z"
   },
   {
     "name": "the-brain-actuator",
@@ -160,23 +192,6 @@
       "website"
     ],
     "updated_at": "2026-05-31T03:47:31Z"
-  },
-  {
-    "name": "github-society-intelligence",
-    "full_name": "japer-technology/github-society-intelligence",
-    "html_url": "https://github.com/japer-technology/github-society-intelligence",
-    "description": "\ud83e\udde0 Pi within a repository-local multi-AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "forge-ai",
-      "minsky",
-      "repo-ai"
-    ],
-    "updated_at": "2026-05-27T01:48:51Z"
   },
   {
     "name": "forgejo-society-aw-labour",
