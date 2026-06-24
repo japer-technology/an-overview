@@ -1,5 +1,59 @@
 [
   {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "ai-assistant",
+      "autonomous-agent",
+      "chatbot",
+      "cli",
+      "linux",
+      "llm",
+      "self-hosted",
+      "tailscale",
+      "ubuntu-ai",
+      "ubuntu-root"
+    ],
+    "updated_at": "2026-06-24T04:15:23Z"
+  },
+  {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "Software for dentists",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-23T13:30:53Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-06-23T07:10:54Z"
+  },
+  {
     "name": "github-society-intelligence",
     "full_name": "japer-technology/github-society-intelligence",
     "html_url": "https://github.com/japer-technology/github-society-intelligence",
@@ -71,47 +125,6 @@
     "updated_at": "2026-06-22T23:46:10Z"
   },
   {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-06-22T07:54:26Z"
-  },
-  {
-    "name": "ubuntu-zombie",
-    "full_name": "japer-technology/ubuntu-zombie",
-    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ai-assistant",
-      "autonomous-agent",
-      "chatbot",
-      "cli",
-      "linux",
-      "llm",
-      "self-hosted",
-      "tailscale",
-      "ubuntu-ai",
-      "ubuntu-root"
-    ],
-    "updated_at": "2026-06-21T23:52:38Z"
-  },
-  {
     "name": "github-minimum-intelligence",
     "full_name": "japer-technology/github-minimum-intelligence",
     "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
@@ -138,19 +151,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-19T22:24:23Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "Software for dentists",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-17T20:52:15Z"
   },
   {
     "name": "flat-email",
