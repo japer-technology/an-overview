@@ -3,7 +3,7 @@
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
     "homepage": "",
     "language": "Shell",
     "stargazers_count": 0,
@@ -22,7 +22,218 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-06-25T01:57:52Z"
+    "updated_at": "2026-06-26T06:25:56Z"
+  },
+  {
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-06-25T21:52:06Z"
+  },
+  {
+    "name": "github-intelligence-supervisor",
+    "full_name": "japer-technology/github-intelligence-supervisor",
+    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
+    "description": "\ud83e\udde0GtiHub Intelligence Supervisor",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:48:32Z"
+  },
+  {
+    "name": "github-intelligence-emergency",
+    "full_name": "japer-technology/github-intelligence-emergency",
+    "html_url": "https://github.com/japer-technology/github-intelligence-emergency",
+    "description": "\ud83e\udde0GitHub Intelligence Emergency",
+    "homepage": "https://japer-technology.github.io/github-intelligence-emergency",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "failsafe-ai",
+      "github-ai-cloud-agents",
+      "github-pat"
+    ],
+    "updated_at": "2026-06-25T21:48:29Z"
+  },
+  {
+    "name": "github-intelligence-dashboard",
+    "full_name": "japer-technology/github-intelligence-dashboard",
+    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
+    "description": "\ud83e\udde0GitHub Intelligence Dashboard ",
+    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:48:24Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:48:20Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-06-25T21:48:16Z"
+  },
+  {
+    "name": "the-brain-actuator",
+    "full_name": "japer-technology/the-brain-actuator",
+    "html_url": "https://github.com/japer-technology/the-brain-actuator",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:47:06Z"
+  },
+  {
+    "name": "japer-technology.github.io",
+    "full_name": "japer-technology/japer-technology.github.io",
+    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udee0\ufe0fJaper Technology GitHub Website",
+    "homepage": "https://japer-technology.github.io/",
+    "language": "Python",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "website"
+    ],
+    "updated_at": "2026-06-25T21:46:58Z"
+  },
+  {
+    "name": "github-zeroclaw-intelligence",
+    "full_name": "japer-technology/github-zeroclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-zeroclaw-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0ZeroClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:46:43Z"
+  },
+  {
+    "name": "github-pi-mono-intelligence",
+    "full_name": "japer-technology/github-pi-mono-intelligence",
+    "html_url": "https://github.com/japer-technology/github-pi-mono-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0pi-mono within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:46:35Z"
+  },
+  {
+    "name": "github-nanoclaw-intelligence",
+    "full_name": "japer-technology/github-nanoclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-nanoclaw-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0NanoClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:46:26Z"
+  },
+  {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A full software stack for dentists",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:46:02Z"
+  },
+  {
+    "name": "forgejo-society-aw-labour",
+    "full_name": "japer-technology/forgejo-society-aw-labour",
+    "html_url": "https://github.com/japer-technology/forgejo-society-aw-labour",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society Agentic Workflows Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised AI agents that include labour.",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-06-25T21:45:04Z"
+  },
+  {
+    "name": "forgejo-society-git-labour",
+    "full_name": "japer-technology/forgejo-society-git-labour",
+    "html_url": "https://github.com/japer-technology/forgejo-society-git-labour",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society Git Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised repositories that include labour.",
+    "homepage": "",
+    "language": "Go",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false,
+    "topics": [
+      "forgejo-runner"
+    ],
+    "updated_at": "2026-06-25T21:44:53Z"
+  },
+  {
+    "name": "github-gstack-intelligence",
+    "full_name": "japer-technology/github-gstack-intelligence",
+    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "pi-mono",
+      "y-combinator"
+    ],
+    "updated_at": "2026-06-25T21:44:43Z"
   },
   {
     "name": "an-overview",
@@ -38,20 +249,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-24T07:07:51Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "Software for dentists",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-23T13:30:53Z"
+    "updated_at": "2026-06-25T07:08:02Z"
   },
   {
     "name": "github-society-intelligence",
@@ -69,21 +267,6 @@
       "repo-ai"
     ],
     "updated_at": "2026-06-23T05:06:13Z"
-  },
-  {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Software that discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-06-23T01:56:11Z"
   },
   {
     "name": "forgejo-society",
@@ -125,34 +308,6 @@
     "updated_at": "2026-06-22T23:46:10Z"
   },
   {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-06-20T03:03:41Z"
-  },
-  {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-19T22:24:23Z"
-  },
-  {
     "name": "flat-email",
     "full_name": "japer-technology/flat-email",
     "html_url": "https://github.com/japer-technology/flat-email",
@@ -164,64 +319,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-10T11:45:56Z"
-  },
-  {
-    "name": "the-brain-actuator",
-    "full_name": "japer-technology/the-brain-actuator",
-    "html_url": "https://github.com/japer-technology/the-brain-actuator",
-    "description": "A library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain. \u26a0\ufe0fUNDER DEVELOPMENT ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-06-05T01:27:32Z"
-  },
-  {
-    "name": "japer-technology.github.io",
-    "full_name": "japer-technology/japer-technology.github.io",
-    "html_url": "https://github.com/japer-technology/japer-technology.github.io",
-    "description": "\ud83d\udee0\ufe0fJaper Technology GitHub Website \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/",
-    "language": "Python",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "website"
-    ],
-    "updated_at": "2026-05-31T03:47:31Z"
-  },
-  {
-    "name": "forgejo-society-aw-labour",
-    "full_name": "japer-technology/forgejo-society-aw-labour",
-    "html_url": "https://github.com/japer-technology/forgejo-society-aw-labour",
-    "description": "\ud83d\udd25 Forgejo Society Agentic Workflows Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised AI agents that include labour.\u26a0\ufe0f UNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T12:42:11Z"
-  },
-  {
-    "name": "github-gstack-intelligence",
-    "full_name": "japer-technology/github-gstack-intelligence",
-    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
-    "description": "\ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.  \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "pi-mono",
-      "y-combinator"
-    ],
-    "updated_at": "2026-05-25T11:47:26Z"
   },
   {
     "name": "developer-japer-io",
@@ -237,102 +334,5 @@
       "main-product"
     ],
     "updated_at": "2026-05-25T08:28:39Z"
-  },
-  {
-    "name": "github-intelligence-supervisor",
-    "full_name": "japer-technology/github-intelligence-supervisor",
-    "html_url": "https://github.com/japer-technology/github-intelligence-supervisor",
-    "description": "\ud83e\udde0GtiHub Intelligence Supervisor \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:46:53Z"
-  },
-  {
-    "name": "github-intelligence-emergency",
-    "full_name": "japer-technology/github-intelligence-emergency",
-    "html_url": "https://github.com/japer-technology/github-intelligence-emergency",
-    "description": "\ud83e\udde0GitHub Intelligence Emergency",
-    "homepage": "https://japer-technology.github.io/github-intelligence-emergency",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "failsafe-ai",
-      "github-ai-cloud-agents",
-      "github-pat"
-    ],
-    "updated_at": "2026-05-25T07:46:44Z"
-  },
-  {
-    "name": "github-intelligence-dashboard",
-    "full_name": "japer-technology/github-intelligence-dashboard",
-    "html_url": "https://github.com/japer-technology/github-intelligence-dashboard",
-    "description": "\ud83e\udde0GitHub Intelligence Dashboard \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "https://japer-technology.github.io/github-intelligence-dashboard/",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:46:15Z"
-  },
-  {
-    "name": "forgejo-society-git-labour",
-    "full_name": "japer-technology/forgejo-society-git-labour",
-    "html_url": "https://github.com/japer-technology/forgejo-society-git-labour",
-    "description": "\ud83d\udd25 Forgejo Society Git Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised repositories that include labour.\u26a0\ufe0f UNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [
-      "forgejo-runner"
-    ],
-    "updated_at": "2026-05-25T07:33:36Z"
-  },
-  {
-    "name": "github-nanoclaw-intelligence",
-    "full_name": "japer-technology/github-nanoclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-nanoclaw-intelligence",
-    "description": "\ud83e\udde0NanoClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:22:41Z"
-  },
-  {
-    "name": "github-pi-mono-intelligence",
-    "full_name": "japer-technology/github-pi-mono-intelligence",
-    "html_url": "https://github.com/japer-technology/github-pi-mono-intelligence",
-    "description": "\ud83e\udde0pi-mono within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:22:28Z"
-  },
-  {
-    "name": "github-zeroclaw-intelligence",
-    "full_name": "japer-technology/github-zeroclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-zeroclaw-intelligence",
-    "description": "\ud83e\udde0ZeroClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow. \u26a0\ufe0fUNDER DEVELOPMENT",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-05-25T07:22:18Z"
   }
 ]
