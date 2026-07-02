@@ -13,7 +13,32 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-06-30T07:14:24Z"
+    "updated_at": "2026-07-01T12:12:45Z"
+  },
+  {
+    "name": "ubuntu-zombie",
+    "full_name": "japer-technology/ubuntu-zombie",
+    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "homepage": "",
+    "language": "Shell",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "ai-assistant",
+      "autonomous-agent",
+      "chatbot",
+      "cli",
+      "linux",
+      "llm",
+      "self-hosted",
+      "tailscale",
+      "ubuntu-ai",
+      "ubuntu-root"
+    ],
+    "updated_at": "2026-07-01T08:33:03Z"
   },
   {
     "name": "forgejo-society",
@@ -51,31 +76,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-06-26T12:26:23Z"
-  },
-  {
-    "name": "ubuntu-zombie",
-    "full_name": "japer-technology/ubuntu-zombie",
-    "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ai-assistant",
-      "autonomous-agent",
-      "chatbot",
-      "cli",
-      "linux",
-      "llm",
-      "self-hosted",
-      "tailscale",
-      "ubuntu-ai",
-      "ubuntu-root"
-    ],
-    "updated_at": "2026-06-26T08:39:52Z"
   },
   {
     "name": "lmstudio-vampire",
