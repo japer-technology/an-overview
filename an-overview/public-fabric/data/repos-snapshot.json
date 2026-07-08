@@ -12,7 +12,7 @@
     "topics": [
       "lmstudio"
     ],
-    "updated_at": "2026-07-07T06:07:26Z"
+    "updated_at": "2026-07-08T01:39:44Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -37,7 +37,38 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-07T04:13:54Z"
+    "updated_at": "2026-07-07T23:31:40Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-07-07T07:37:56Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-07-07T07:08:26Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -77,37 +108,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-07-06T21:43:24Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-07-06T20:59:39Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-07-06T07:28:19Z"
   },
   {
     "name": "full-stack-dentist",
