@@ -1,20 +1,5 @@
 [
   {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-07-08T01:39:44Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -37,7 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-07T23:31:40Z"
+    "updated_at": "2026-07-09T04:24:45Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -52,7 +37,65 @@
     "topics": [
       "github-ai"
     ],
-    "updated_at": "2026-07-07T07:37:56Z"
+    "updated_at": "2026-07-08T23:08:39Z"
+  },
+  {
+    "name": "flat-email",
+    "full_name": "japer-technology/flat-email",
+    "html_url": "https://github.com/japer-technology/flat-email",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your email by turning them into plain files. ",
+    "homepage": "",
+    "language": "Go",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-07-08T07:24:05Z"
+  },
+  {
+    "name": "aws-lambda-nodejs-catch-all",
+    "full_name": "japer-technology/aws-lambda-nodejs-catch-all",
+    "html_url": "https://github.com/japer-technology/aws-lambda-nodejs-catch-all",
+    "description": "A Universal AWS Lambda Node JS Entry Point.",
+    "homepage": "https://aws.amazon.com",
+    "language": "JavaScript",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "aws-lambda-node"
+    ],
+    "updated_at": "2026-07-08T07:22:45Z"
+  },
+  {
+    "name": "developer-japer-io",
+    "full_name": "japer-technology/developer-japer-io",
+    "html_url": "https://github.com/japer-technology/developer-japer-io",
+    "description": "\ud83d\udee0\ufe0f Advanced encryption, decryption, validation, and secure resource management via RESTful endpoints.",
+    "homepage": "https://developer.japer.io",
+    "language": "TypeScript",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "main-product"
+    ],
+    "updated_at": "2026-07-08T07:21:17Z"
+  },
+  {
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-07-08T07:08:51Z"
   },
   {
     "name": "an-overview",
@@ -68,7 +111,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-07T07:08:26Z"
+    "updated_at": "2026-07-08T06:47:51Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -95,19 +138,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-07-07T03:24:42Z"
-  },
-  {
-    "name": "flat-email",
-    "full_name": "japer-technology/flat-email",
-    "html_url": "https://github.com/japer-technology/flat-email",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your mail by turning it into plain files you can read, search, back up, and process with any tool you already use. ",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-07-06T21:43:24Z"
   },
   {
     "name": "full-stack-dentist",
@@ -278,35 +308,5 @@
       "repo-ai"
     ],
     "updated_at": "2026-06-23T05:06:13Z"
-  },
-  {
-    "name": "aws-lambda-nodejs-catch-all",
-    "full_name": "japer-technology/aws-lambda-nodejs-catch-all",
-    "html_url": "https://github.com/japer-technology/aws-lambda-nodejs-catch-all",
-    "description": "A universal AWS Lambda entry point implemented in Node.js. It inspects each incoming event and automatically routes it to the appropriate handler based on the invocation source.Catch-all AWS Lambda (Node.js) function that receives, logs, and routes every AWS event trigger through a single, unified handler.",
-    "homepage": "https://aws.amazon.com",
-    "language": "JavaScript",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "aws-lambda-node"
-    ],
-    "updated_at": "2026-06-22T23:46:10Z"
-  },
-  {
-    "name": "developer-japer-io",
-    "full_name": "japer-technology/developer-japer-io",
-    "html_url": "https://github.com/japer-technology/developer-japer-io",
-    "description": "\ud83d\udee0\ufe0f The JAPER API provides developers with advanced encryption, decryption, validation, and secure resource management via RESTful endpoints.",
-    "homepage": "https://developer.japer.io",
-    "language": "TypeScript",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "main-product"
-    ],
-    "updated_at": "2026-05-25T08:28:39Z"
   }
 ]
