@@ -1,16 +1,16 @@
 [
   {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
+    "name": "obsidian-hermes",
+    "full_name": "japer-technology/obsidian-hermes",
+    "html_url": "https://github.com/japer-technology/obsidian-hermes",
+    "description": "Obsidian + Hermes Agent = ?",
+    "homepage": null,
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-07-12T22:36:18Z"
+    "updated_at": "2026-07-14T06:36:44Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -35,7 +35,35 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-12T07:59:07Z"
+    "updated_at": "2026-07-14T04:42:59Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-07-14T03:42:26Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-07-14T02:50:46Z"
   },
   {
     "name": "an-overview",
@@ -51,7 +79,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-12T06:51:17Z"
+    "updated_at": "2026-07-13T07:02:46Z"
   },
   {
     "name": "aws-lambda-nodejs-catch-all",
@@ -67,21 +95,6 @@
       "aws-lambda-node"
     ],
     "updated_at": "2026-07-11T10:36:04Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-07-11T10:34:04Z"
   },
   {
     "name": "lmstudio-vampire",
