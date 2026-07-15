@@ -1,18 +1,5 @@
 [
   {
-    "name": "obsidian-hermes",
-    "full_name": "japer-technology/obsidian-hermes",
-    "html_url": "https://github.com/japer-technology/obsidian-hermes",
-    "description": "Obsidian + Hermes Agent = ?",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-07-14T06:36:44Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -35,7 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-14T04:42:59Z"
+    "updated_at": "2026-07-15T05:46:45Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -48,7 +35,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-07-14T03:42:26Z"
+    "updated_at": "2026-07-15T05:23:28Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -63,7 +50,20 @@
     "topics": [
       "github-ai"
     ],
-    "updated_at": "2026-07-14T02:50:46Z"
+    "updated_at": "2026-07-14T22:34:49Z"
+  },
+  {
+    "name": "obsidian-hermes",
+    "full_name": "japer-technology/obsidian-hermes",
+    "html_url": "https://github.com/japer-technology/obsidian-hermes",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Obsidian becomes Hermes Agent\u2019s local command centre, memory, workflow engine, and continuously maintained knowledge system.",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-07-14T08:07:49Z"
   },
   {
     "name": "an-overview",
@@ -79,7 +79,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-13T07:02:46Z"
+    "updated_at": "2026-07-14T06:41:45Z"
   },
   {
     "name": "aws-lambda-nodejs-catch-all",
