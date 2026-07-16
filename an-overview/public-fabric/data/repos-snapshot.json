@@ -3,8 +3,8 @@
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu Zombie adds a private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
-    "homepage": "",
+    "description": "A private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "homepage": "https://www.japer.tools/repo/ubuntu-zombie.html",
     "language": "Shell",
     "stargazers_count": 0,
     "fork": false,
@@ -22,7 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-15T05:46:45Z"
+    "updated_at": "2026-07-16T05:24:39Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -35,7 +35,23 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-07-15T05:23:28Z"
+    "updated_at": "2026-07-15T07:11:33Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-07-15T06:42:32Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -64,22 +80,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-07-14T08:07:49Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-07-14T06:41:45Z"
   },
   {
     "name": "aws-lambda-nodejs-catch-all",
