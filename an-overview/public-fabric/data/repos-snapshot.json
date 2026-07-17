@@ -22,20 +22,57 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-16T05:24:39Z"
+    "updated_at": "2026-07-17T05:06:30Z"
   },
   {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "name": "github-society-intelligence",
+    "full_name": "japer-technology/github-society-intelligence",
+    "html_url": "https://github.com/japer-technology/github-society-intelligence",
+    "description": "\ud83e\udde0 Ubuntu + Forgejo + Minsky + Chollet",
     "homepage": "",
     "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [],
-    "updated_at": "2026-07-15T07:11:33Z"
+    "topics": [
+      "chollet",
+      "forge-ai",
+      "minsky",
+      "repo-ai"
+    ],
+    "updated_at": "2026-07-17T00:12:28Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-07-17T00:02:03Z"
+  },
+  {
+    "name": "github-gstack-intelligence",
+    "full_name": "japer-technology/github-gstack-intelligence",
+    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
+    "description": "\ud83e\udde0 The garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai-agent",
+      "pi-mono",
+      "y-combinator"
+    ],
+    "updated_at": "2026-07-16T23:16:15Z"
   },
   {
     "name": "an-overview",
@@ -51,22 +88,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-15T06:42:32Z"
+    "updated_at": "2026-07-16T06:46:51Z"
   },
   {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0 Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0 OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
     "homepage": "",
     "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-07-14T22:34:49Z"
+    "topics": [],
+    "updated_at": "2026-07-15T07:11:33Z"
   },
   {
     "name": "obsidian-hermes",
@@ -287,39 +322,5 @@
       "forgejo-runner"
     ],
     "updated_at": "2026-06-25T21:44:53Z"
-  },
-  {
-    "name": "github-gstack-intelligence",
-    "full_name": "japer-technology/github-gstack-intelligence",
-    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "pi-mono",
-      "y-combinator"
-    ],
-    "updated_at": "2026-06-25T21:44:43Z"
-  },
-  {
-    "name": "github-society-intelligence",
-    "full_name": "japer-technology/github-society-intelligence",
-    "html_url": "https://github.com/japer-technology/github-society-intelligence",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83e\udde0 Ubuntu + Forgejo + Minsky + Chollet",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "forge-ai",
-      "minsky",
-      "repo-ai"
-    ],
-    "updated_at": "2026-06-23T05:06:13Z"
   }
 ]
