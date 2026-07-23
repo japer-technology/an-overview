@@ -22,7 +22,31 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-21T15:54:08Z"
+    "updated_at": "2026-07-23T06:34:52Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-07-22T09:49:12Z"
   },
   {
     "name": "an-overview",
@@ -38,7 +62,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-21T06:49:08Z"
+    "updated_at": "2026-07-22T06:50:11Z"
   },
   {
     "name": "github-society-intelligence",
@@ -199,30 +223,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-07-05T12:47:15Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-06-30T03:43:44Z"
   },
   {
     "name": "the-brain-actuator",
