@@ -3,7 +3,7 @@
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
-    "description": "A private, root-capable AI Systems Administrator account to Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
+    "description": "A private, root-capable AI Systems Administrator account on Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
     "homepage": "https://www.japer.tools/repo/ubuntu-zombie.html",
     "language": "Shell",
     "stargazers_count": 0,
@@ -22,7 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-28T05:29:24Z"
+    "updated_at": "2026-07-28T23:17:03Z"
   },
   {
     "name": "an-overview",
@@ -38,7 +38,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-07-27T07:05:20Z"
+    "updated_at": "2026-07-28T06:50:55Z"
   },
   {
     "name": "forgejo-society",
