@@ -1,43 +1,18 @@
 [
   {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "name": "lmstudio-vampire",
+    "full_name": "japer-technology/lmstudio-vampire",
+    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
     "homepage": "",
-    "language": "TypeScript",
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
+      "lmstudio"
     ],
-    "updated_at": "2026-07-30T02:13:58Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-07-29T06:52:33Z"
+    "updated_at": "2026-07-31T05:29:54Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -62,7 +37,47 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-07-28T23:17:03Z"
+    "updated_at": "2026-07-31T04:30:01Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-07-30T06:51:18Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-07-30T02:13:58Z"
   },
   {
     "name": "github-society-intelligence",
@@ -154,21 +169,6 @@
       "aws-lambda-node"
     ],
     "updated_at": "2026-07-11T10:36:04Z"
-  },
-  {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-07-11T05:21:49Z"
   },
   {
     "name": "flat-email",
