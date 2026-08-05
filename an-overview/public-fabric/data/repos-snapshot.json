@@ -1,43 +1,31 @@
 [
   {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
+    "name": "flat-email",
+    "full_name": "japer-technology/flat-email",
+    "html_url": "https://github.com/japer-technology/flat-email",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your email by turning them into plain files. ",
+    "homepage": "",
+    "language": "Go",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-08-03T07:04:21Z"
+    "topics": [],
+    "updated_at": "2026-08-05T06:18:03Z"
   },
   {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "name": "llm-vampire",
+    "full_name": "japer-technology/llm-vampire",
+    "html_url": "https://github.com/japer-technology/llm-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
     "homepage": "",
-    "language": "TypeScript",
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
+      "lmstudio"
     ],
-    "updated_at": "2026-08-02T21:31:44Z"
+    "updated_at": "2026-08-05T05:12:00Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -62,22 +50,47 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-02T04:40:20Z"
+    "updated_at": "2026-08-05T04:15:15Z"
   },
   {
-    "name": "lmstudio-vampire",
-    "full_name": "japer-technology/lmstudio-vampire",
-    "html_url": "https://github.com/japer-technology/lmstudio-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [
-      "lmstudio"
+      "github",
+      "public"
     ],
-    "updated_at": "2026-07-31T05:29:54Z"
+    "updated_at": "2026-08-04T06:49:41Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-08-02T21:31:44Z"
   },
   {
     "name": "github-society-intelligence",
@@ -169,19 +182,6 @@
       "aws-lambda-node"
     ],
     "updated_at": "2026-07-11T10:36:04Z"
-  },
-  {
-    "name": "flat-email",
-    "full_name": "japer-technology/flat-email",
-    "html_url": "https://github.com/japer-technology/flat-email",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your email by turning them into plain files. ",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-07-08T07:24:05Z"
   },
   {
     "name": "developer-japer-io",
