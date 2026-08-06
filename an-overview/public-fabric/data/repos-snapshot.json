@@ -1,31 +1,16 @@
 [
   {
-    "name": "flat-email",
-    "full_name": "japer-technology/flat-email",
-    "html_url": "https://github.com/japer-technology/flat-email",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your email by turning them into plain files. ",
-    "homepage": "",
-    "language": "Go",
+    "name": "curriculum-flame",
+    "full_name": "japer-technology/curriculum-flame",
+    "html_url": "https://github.com/japer-technology/curriculum-flame",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A local parent controlled AI allowing children to learn above and below their current curriculum while blocking current level instruction",
+    "homepage": null,
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-08-05T06:18:03Z"
-  },
-  {
-    "name": "llm-vampire",
-    "full_name": "japer-technology/llm-vampire",
-    "html_url": "https://github.com/japer-technology/llm-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LM Studio machines.",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-08-05T05:12:00Z"
+    "updated_at": "2026-08-06T06:38:55Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -50,7 +35,22 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-05T04:15:15Z"
+    "updated_at": "2026-08-05T22:12:04Z"
+  },
+  {
+    "name": "llm-vampire",
+    "full_name": "japer-technology/llm-vampire",
+    "html_url": "https://github.com/japer-technology/llm-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LLM API..",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-08-05T22:03:54Z"
   },
   {
     "name": "an-overview",
@@ -66,7 +66,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-04T06:49:41Z"
+    "updated_at": "2026-08-05T06:52:18Z"
+  },
+  {
+    "name": "flat-email",
+    "full_name": "japer-technology/flat-email",
+    "html_url": "https://github.com/japer-technology/flat-email",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Full ownership of your email by turning them into plain files. ",
+    "homepage": "",
+    "language": "Go",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-05T06:18:03Z"
   },
   {
     "name": "forgejo-society",
