@@ -10,7 +10,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-08-06T06:38:55Z"
+    "updated_at": "2026-08-07T05:43:03Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -35,22 +35,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-05T22:12:04Z"
-  },
-  {
-    "name": "llm-vampire",
-    "full_name": "japer-technology/llm-vampire",
-    "html_url": "https://github.com/japer-technology/llm-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LLM API..",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-08-05T22:03:54Z"
+    "updated_at": "2026-08-07T03:53:34Z"
   },
   {
     "name": "an-overview",
@@ -66,7 +51,22 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-05T06:52:18Z"
+    "updated_at": "2026-08-06T06:51:58Z"
+  },
+  {
+    "name": "llm-vampire",
+    "full_name": "japer-technology/llm-vampire",
+    "html_url": "https://github.com/japer-technology/llm-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LLM API..",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-08-05T22:03:54Z"
   },
   {
     "name": "flat-email",
