@@ -1,24 +1,11 @@
 [
   {
-    "name": "curriculum-flame",
-    "full_name": "japer-technology/curriculum-flame",
-    "html_url": "https://github.com/japer-technology/curriculum-flame",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A local parent controlled AI allowing children to learn above and below their current curriculum while blocking current level instruction",
-    "homepage": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-07T05:43:03Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
     "description": "A private, root-capable AI Systems Administrator account on Ubuntu so the users can ask the AI to diagnose, explain, configure, repair, and mantain itself.",
     "homepage": "https://www.japer.tools/repo/ubuntu-zombie.html",
-    "language": "Shell",
+    "language": "Python",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
@@ -35,7 +22,7 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-07T03:53:34Z"
+    "updated_at": "2026-08-08T05:47:23Z"
   },
   {
     "name": "an-overview",
@@ -51,7 +38,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-06T06:51:58Z"
+    "updated_at": "2026-08-07T06:22:34Z"
+  },
+  {
+    "name": "curriculum-flame",
+    "full_name": "japer-technology/curriculum-flame",
+    "html_url": "https://github.com/japer-technology/curriculum-flame",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A local parent controlled AI allowing children to learn above and below their current curriculum while blocking current level instruction",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-07T05:43:03Z"
   },
   {
     "name": "llm-vampire",
