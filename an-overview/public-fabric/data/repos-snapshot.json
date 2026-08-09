@@ -22,7 +22,46 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-08T05:47:23Z"
+    "updated_at": "2026-08-09T04:03:24Z"
+  },
+  {
+    "name": "forgejo-society",
+    "full_name": "japer-technology/forgejo-society",
+    "html_url": "https://github.com/japer-technology/forgejo-society",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 1,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-tools",
+      "forgejo",
+      "forgejo-actions",
+      "forgejo-integration",
+      "forgejo-runner",
+      "forgejo-theme"
+    ],
+    "updated_at": "2026-08-08T13:31:33Z"
+  },
+  {
+    "name": "llm-vampire",
+    "full_name": "japer-technology/llm-vampire",
+    "html_url": "https://github.com/japer-technology/llm-vampire",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LLM API..",
+    "homepage": "",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "lmstudio"
+    ],
+    "updated_at": "2026-08-08T07:31:40Z"
   },
   {
     "name": "an-overview",
@@ -38,7 +77,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-07T06:22:34Z"
+    "updated_at": "2026-08-08T06:12:37Z"
   },
   {
     "name": "curriculum-flame",
@@ -54,21 +93,6 @@
     "updated_at": "2026-08-07T05:43:03Z"
   },
   {
-    "name": "llm-vampire",
-    "full_name": "japer-technology/llm-vampire",
-    "html_url": "https://github.com/japer-technology/llm-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT Discovers, governs, and routes access to nearby private AI compute from approved LLM API..",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-08-05T22:03:54Z"
-  },
-  {
     "name": "flat-email",
     "full_name": "japer-technology/flat-email",
     "html_url": "https://github.com/japer-technology/flat-email",
@@ -80,30 +104,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-08-05T06:18:03Z"
-  },
-  {
-    "name": "forgejo-society",
-    "full_name": "japer-technology/forgejo-society",
-    "html_url": "https://github.com/japer-technology/forgejo-society",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25 Forgejo Society is a forge-scale cognitive architecture in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised \ud83e\udde0 AI and labour repositories.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "ai-assistant",
-      "ai-tools",
-      "forgejo",
-      "forgejo-actions",
-      "forgejo-integration",
-      "forgejo-runner",
-      "forgejo-theme"
-    ],
-    "updated_at": "2026-08-02T21:31:44Z"
   },
   {
     "name": "github-society-intelligence",
