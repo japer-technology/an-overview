@@ -22,7 +22,49 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-09T04:03:24Z"
+    "updated_at": "2026-08-10T02:59:56Z"
+  },
+  {
+    "name": "imaginary-friend",
+    "full_name": "japer-technology/imaginary-friend",
+    "html_url": "https://github.com/japer-technology/imaginary-friend",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT A private conversational companion with access only to its own state and a workspace deliberately shared by its human owner.",
+    "homepage": null,
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-10T02:34:36Z"
+  },
+  {
+    "name": "ERIC",
+    "full_name": "japer-technology/ERIC",
+    "html_url": "https://github.com/japer-technology/ERIC",
+    "description": null,
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-09T14:21:27Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-08-09T06:13:31Z"
   },
   {
     "name": "forgejo-society",
@@ -62,22 +104,6 @@
       "lmstudio"
     ],
     "updated_at": "2026-08-08T07:31:40Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udef0\ufe0f An Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-08-08T06:12:37Z"
   },
   {
     "name": "curriculum-flame",
