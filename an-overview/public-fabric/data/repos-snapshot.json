@@ -1,18 +1,5 @@
 [
   {
-    "name": "obsidian-hermes",
-    "full_name": "japer-technology/obsidian-hermes",
-    "html_url": "https://github.com/japer-technology/obsidian-hermes",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fObsidian becomes Hermes Agent\u2019s local command centre, memory, workflow engine, and continuously maintained knowledge system.",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-12T04:46:24Z"
-  },
-  {
     "name": "ubuntu-ai-system-administrator",
     "full_name": "japer-technology/ubuntu-ai-system-administrator",
     "html_url": "https://github.com/japer-technology/ubuntu-ai-system-administrator",
@@ -26,7 +13,36 @@
       "ai-agent",
       "ubuntu"
     ],
-    "updated_at": "2026-08-12T04:05:14Z"
+    "updated_at": "2026-08-12T09:38:52Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-08-12T06:28:06Z"
+  },
+  {
+    "name": "obsidian-hermes",
+    "full_name": "japer-technology/obsidian-hermes",
+    "html_url": "https://github.com/japer-technology/obsidian-hermes",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fObsidian becomes Hermes Agent\u2019s local command centre, memory, workflow engine, and continuously maintained knowledge system.",
+    "homepage": "",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-12T04:46:24Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -168,12 +184,12 @@
     "updated_at": "2026-08-11T22:07:34Z"
   },
   {
-    "name": "ubuntu-llama",
-    "full_name": "japer-technology/ubuntu-llama",
-    "html_url": "https://github.com/japer-technology/ubuntu-llama",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of llama",
+    "name": "ubuntu-imaginary-friend",
+    "full_name": "japer-technology/ubuntu-imaginary-friend",
+    "html_url": "https://github.com/japer-technology/ubuntu-imaginary-friend",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of a private conversational companion with access only to its own state and a workspace deliberately shared by its human owner.",
     "homepage": "",
-    "language": null,
+    "language": "Python",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
@@ -181,12 +197,12 @@
     "updated_at": "2026-08-11T22:07:29Z"
   },
   {
-    "name": "ubuntu-imaginary-friend",
-    "full_name": "japer-technology/ubuntu-imaginary-friend",
-    "html_url": "https://github.com/japer-technology/ubuntu-imaginary-friend",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of a private conversational companion with access only to its own state and a workspace deliberately shared by its human owner.",
+    "name": "ubuntu-llama",
+    "full_name": "japer-technology/ubuntu-llama",
+    "html_url": "https://github.com/japer-technology/ubuntu-llama",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of llama",
     "homepage": "",
-    "language": "Python",
+    "language": null,
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
@@ -288,22 +304,6 @@
       "forgejo-theme"
     ],
     "updated_at": "2026-08-11T22:02:45Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-08-11T06:16:47Z"
   },
   {
     "name": "github-minimum-intelligence",
