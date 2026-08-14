@@ -3,7 +3,7 @@
     "name": "ubuntu-ai-system-administrator",
     "full_name": "japer-technology/ubuntu-ai-system-administrator",
     "html_url": "https://github.com/japer-technology/ubuntu-ai-system-administrator",
-    "description": "\ud83d\udfe0Installer of an AI System Administrator",
+    "description": "\ud83d\udfe0Installer of a root priviledged AI Agent Ubuntu System Administrator",
     "homepage": "",
     "language": "Shell",
     "stargazers_count": 0,
@@ -13,7 +13,7 @@
       "ai-agent",
       "ubuntu"
     ],
-    "updated_at": "2026-08-12T09:38:52Z"
+    "updated_at": "2026-08-14T03:04:29Z"
   },
   {
     "name": "an-overview",
@@ -29,7 +29,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-12T06:28:06Z"
+    "updated_at": "2026-08-13T06:28:32Z"
   },
   {
     "name": "obsidian-hermes",
