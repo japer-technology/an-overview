@@ -5,12 +5,12 @@
     "html_url": "https://github.com/japer-technology/ai-helped",
     "description": "The open +AI accountability mark: AI helped. I take responsibility. A simple notation for human responsibility in AI-assisted work. #PlusAI was designed by Eric Mourant +AI",
     "homepage": "",
-    "language": null,
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-08-20T05:19:49Z"
+    "updated_at": "2026-08-21T05:56:00Z"
   },
   {
     "name": "an-overview",
@@ -26,7 +26,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-19T06:07:30Z"
+    "updated_at": "2026-08-20T06:07:20Z"
   },
   {
     "name": "ubuntu-ai-system-administrator",
