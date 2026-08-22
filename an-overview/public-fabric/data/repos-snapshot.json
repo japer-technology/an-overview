@@ -10,7 +10,20 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-08-21T05:56:00Z"
+    "updated_at": "2026-08-22T02:21:11Z"
+  },
+  {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA full software stack for dentists",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-21T06:12:29Z"
   },
   {
     "name": "an-overview",
@@ -26,7 +39,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-20T06:07:20Z"
+    "updated_at": "2026-08-21T06:08:02Z"
   },
   {
     "name": "ubuntu-ai-system-administrator",
@@ -239,19 +252,6 @@
       "repo-ai"
     ],
     "updated_at": "2026-08-11T22:04:51Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA full software stack for dentists",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:04:26Z"
   },
   {
     "name": "forgejo-society-git-labour",
