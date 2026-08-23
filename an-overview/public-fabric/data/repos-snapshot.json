@@ -10,20 +10,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-08-22T02:21:11Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA full software stack for dentists",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-21T06:12:29Z"
+    "updated_at": "2026-08-23T04:21:19Z"
   },
   {
     "name": "an-overview",
@@ -39,7 +26,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-21T06:08:02Z"
+    "updated_at": "2026-08-22T06:05:22Z"
+  },
+  {
+    "name": "full-stack-dentist",
+    "full_name": "japer-technology/full-stack-dentist",
+    "html_url": "https://github.com/japer-technology/full-stack-dentist",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA full software stack for dentists",
+    "homepage": "",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-21T06:12:29Z"
   },
   {
     "name": "ubuntu-ai-system-administrator",
