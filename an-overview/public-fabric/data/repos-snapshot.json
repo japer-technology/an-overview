@@ -1,18 +1,5 @@
 [
   {
-    "name": "ai-helped",
-    "full_name": "japer-technology/ai-helped",
-    "html_url": "https://github.com/japer-technology/ai-helped",
-    "description": "The open +AI accountability mark: AI helped. I take responsibility. A simple notation for human responsibility in AI-assisted work. #PlusAI was designed by Eric Mourant +AI",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-24T02:47:44Z"
-  },
-  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -26,7 +13,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-23T06:06:35Z"
+    "updated_at": "2026-08-24T06:10:49Z"
   },
   {
     "name": "full-stack-dentist",
