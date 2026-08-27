@@ -1,18 +1,5 @@
 [
   {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-26T05:33:05Z"
-  },
-  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -26,7 +13,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-08-25T06:09:41Z"
+    "updated_at": "2026-08-26T06:08:18Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-08-26T05:33:05Z"
   },
   {
     "name": "full-stack-dentist",
