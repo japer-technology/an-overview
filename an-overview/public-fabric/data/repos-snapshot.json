@@ -1,16 +1,16 @@
 [
   {
-    "name": "a-one-page-ai-book",
-    "full_name": "japer-technology/a-one-page-ai-book",
-    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
-    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
-    "homepage": "",
-    "language": "TypeScript",
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-09-15T06:19:11Z"
+    "updated_at": "2026-09-16T11:02:45Z"
   },
   {
     "name": "an-overview",
@@ -26,20 +26,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-09-15T06:08:19Z"
+    "updated_at": "2026-09-16T06:08:10Z"
   },
   {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
+    "name": "a-one-page-ai-book",
+    "full_name": "japer-technology/a-one-page-ai-book",
+    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
+    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
+    "homepage": "",
+    "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-09-08T06:37:57Z"
+    "updated_at": "2026-09-15T06:19:11Z"
   },
   {
     "name": "full-stack-dentist",
