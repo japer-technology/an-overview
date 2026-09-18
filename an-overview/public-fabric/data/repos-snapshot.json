@@ -1,16 +1,18 @@
 [
   {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-16T11:02:45Z"
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-09-18T00:30:58Z"
   },
   {
     "name": "an-overview",
@@ -26,7 +28,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-09-16T06:08:10Z"
+    "updated_at": "2026-09-17T06:08:16Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-16T11:02:45Z"
   },
   {
     "name": "a-one-page-ai-book",
@@ -53,22 +68,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-08-21T06:12:29Z"
-  },
-  {
-    "name": "ubuntu-ai-system-administrator",
-    "full_name": "japer-technology/ubuntu-ai-system-administrator",
-    "html_url": "https://github.com/japer-technology/ubuntu-ai-system-administrator",
-    "description": "\ud83d\udfe0Installer of a root priviledged AI Agent Ubuntu System Administrator",
-    "homepage": "",
-    "language": "Shell",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ubuntu"
-    ],
-    "updated_at": "2026-08-14T03:04:29Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -111,79 +110,6 @@
     "updated_at": "2026-08-11T22:08:14Z"
   },
   {
-    "name": "llm-vampire",
-    "full_name": "japer-technology/llm-vampire",
-    "html_url": "https://github.com/japer-technology/llm-vampire",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fDiscovers, governs, and routes access to nearby private AI compute from approved LLM API..",
-    "homepage": "",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "lmstudio"
-    ],
-    "updated_at": "2026-08-11T22:08:10Z"
-  },
-  {
-    "name": "the-brain-actuator",
-    "full_name": "japer-technology/the-brain-actuator",
-    "html_url": "https://github.com/japer-technology/the-brain-actuator",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA library to safely discover, read, and (where safe) modify the on-disk file and folder structure of TheBrain.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 1,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:07:57Z"
-  },
-  {
-    "name": "ubuntu-beep",
-    "full_name": "japer-technology/ubuntu-beep",
-    "html_url": "https://github.com/japer-technology/ubuntu-beep",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of a root priviledged AI Agent",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:07:49Z"
-  },
-  {
-    "name": "ubuntu-curriculum-flame",
-    "full_name": "japer-technology/ubuntu-curriculum-flame",
-    "html_url": "https://github.com/japer-technology/ubuntu-curriculum-flame",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of a local parent controlled AI allowing children to learn above and below their current curriculum while blocking current level instruction",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ubuntu"
-    ],
-    "updated_at": "2026-08-11T22:07:45Z"
-  },
-  {
-    "name": "ubuntu-eric",
-    "full_name": "japer-technology/ubuntu-eric",
-    "html_url": "https://github.com/japer-technology/ubuntu-eric",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of an Evolving Record of Identity and Cognition AI Agent, a lifelong personal AI apprentice designed to learn one specific person over many years.",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "ubuntu"
-    ],
-    "updated_at": "2026-08-11T22:07:39Z"
-  },
-  {
     "name": "ubuntu-forgejo",
     "full_name": "japer-technology/ubuntu-forgejo",
     "html_url": "https://github.com/japer-technology/ubuntu-forgejo",
@@ -208,32 +134,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-08-11T22:07:34Z"
-  },
-  {
-    "name": "ubuntu-imaginary-friend",
-    "full_name": "japer-technology/ubuntu-imaginary-friend",
-    "html_url": "https://github.com/japer-technology/ubuntu-imaginary-friend",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of a private conversational companion with access only to its own state and a workspace deliberately shared by its human owner.",
-    "homepage": "",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:07:29Z"
-  },
-  {
-    "name": "ubuntu-llama",
-    "full_name": "japer-technology/ubuntu-llama",
-    "html_url": "https://github.com/japer-technology/ubuntu-llama",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udfe0Installer of llama",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:07:29Z"
   },
   {
     "name": "github-society-intelligence",
@@ -282,19 +182,6 @@
     "updated_at": "2026-08-11T22:04:01Z"
   },
   {
-    "name": "flat-email",
-    "full_name": "japer-technology/flat-email",
-    "html_url": "https://github.com/japer-technology/flat-email",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fFull ownership of your email by turning them into plain files. ",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T22:03:19Z"
-  },
-  {
     "name": "forgejo-society",
     "full_name": "japer-technology/forgejo-society",
     "html_url": "https://github.com/japer-technology/forgejo-society",
@@ -317,21 +204,6 @@
       "forgejo-theme"
     ],
     "updated_at": "2026-08-11T22:02:45Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-08-11T01:56:53Z"
   },
   {
     "name": "github-openclaw-intelligence",
