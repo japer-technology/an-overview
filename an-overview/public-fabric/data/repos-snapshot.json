@@ -1,20 +1,5 @@
 [
   {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-09-18T00:30:58Z"
-  },
-  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -28,7 +13,22 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-09-17T06:08:16Z"
+    "updated_at": "2026-09-18T06:08:20Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-09-18T00:30:58Z"
   },
   {
     "name": "plus-artificial-intelligence",
