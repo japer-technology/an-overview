@@ -1,5 +1,31 @@
 [
   {
+    "name": "a-one-page-ai-book",
+    "full_name": "japer-technology/a-one-page-ai-book",
+    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
+    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-22T04:25:44Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-22T01:04:50Z"
+  },
+  {
     "name": "an-overview",
     "full_name": "japer-technology/an-overview",
     "html_url": "https://github.com/japer-technology/an-overview",
@@ -13,7 +39,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-09-20T06:07:33Z"
+    "updated_at": "2026-09-21T06:10:46Z"
   },
   {
     "name": "github-minimum-intelligence",
@@ -29,32 +55,6 @@
       "github-ai"
     ],
     "updated_at": "2026-09-18T00:30:58Z"
-  },
-  {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-16T11:02:45Z"
-  },
-  {
-    "name": "a-one-page-ai-book",
-    "full_name": "japer-technology/a-one-page-ai-book",
-    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
-    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-15T06:19:11Z"
   },
   {
     "name": "full-stack-dentist",
