@@ -10,20 +10,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-09-22T04:25:44Z"
-  },
-  {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-22T01:04:50Z"
+    "updated_at": "2026-09-23T00:57:45Z"
   },
   {
     "name": "an-overview",
@@ -39,7 +26,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-09-21T06:10:46Z"
+    "updated_at": "2026-09-22T06:08:08Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-22T01:04:50Z"
   },
   {
     "name": "github-minimum-intelligence",
