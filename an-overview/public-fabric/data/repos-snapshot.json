@@ -1,75 +1,5 @@
 [
   {
-    "name": "a-one-page-ai-book",
-    "full_name": "japer-technology/a-one-page-ai-book",
-    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
-    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-23T00:57:45Z"
-  },
-  {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github",
-      "public"
-    ],
-    "updated_at": "2026-09-22T06:08:08Z"
-  },
-  {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-22T01:04:50Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-09-18T00:30:58Z"
-  },
-  {
-    "name": "full-stack-dentist",
-    "full_name": "japer-technology/full-stack-dentist",
-    "html_url": "https://github.com/japer-technology/full-stack-dentist",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \u2699\ufe0fA full software stack for dentists",
-    "homepage": "",
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-21T06:12:29Z"
-  },
-  {
     "name": "ubuntu-zombie",
     "full_name": "japer-technology/ubuntu-zombie",
     "html_url": "https://github.com/japer-technology/ubuntu-zombie",
@@ -92,7 +22,77 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-08-11T23:02:39Z"
+    "updated_at": "2026-09-23T23:56:10Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-23T22:57:54Z"
+  },
+  {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-09-23T22:44:59Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-09-23T06:08:06Z"
+  },
+  {
+    "name": "a-one-page-ai-book",
+    "full_name": "japer-technology/a-one-page-ai-book",
+    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
+    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-23T00:57:45Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-09-22T01:04:50Z"
   },
   {
     "name": "japer-technology.github.io",
@@ -206,19 +206,6 @@
     "updated_at": "2026-08-11T22:02:45Z"
   },
   {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-08-11T00:36:43Z"
-  },
-  {
     "name": "developer-japer-io",
     "full_name": "japer-technology/developer-japer-io",
     "html_url": "https://github.com/japer-technology/developer-japer-io",
@@ -247,23 +234,6 @@
       "aws-lambda-node"
     ],
     "updated_at": "2026-08-11T00:33:41Z"
-  },
-  {
-    "name": "github-gstack-intelligence",
-    "full_name": "japer-technology/github-gstack-intelligence",
-    "html_url": "https://github.com/japer-technology/github-gstack-intelligence",
-    "description": "\ud83e\udde0 The garrytan/gstack within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "ai-agent",
-      "pi-mono",
-      "y-combinator"
-    ],
-    "updated_at": "2026-07-16T23:16:15Z"
   },
   {
     "name": "github-intelligence-supervisor",
