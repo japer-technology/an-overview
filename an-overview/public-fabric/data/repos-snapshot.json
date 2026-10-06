@@ -1,16 +1,16 @@
 [
   {
-    "name": "a-one-page-ai-book",
-    "full_name": "japer-technology/a-one-page-ai-book",
-    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
-    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
-    "homepage": "",
-    "language": "TypeScript",
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
     "stargazers_count": 0,
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-10-05T05:15:35Z"
+    "updated_at": "2026-10-05T20:19:49Z"
   },
   {
     "name": "an-overview",
@@ -26,7 +26,20 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-10-04T07:59:28Z"
+    "updated_at": "2026-10-05T06:15:13Z"
+  },
+  {
+    "name": "a-one-page-ai-book",
+    "full_name": "japer-technology/a-one-page-ai-book",
+    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
+    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-10-05T05:15:35Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -80,19 +93,6 @@
       "github-ai"
     ],
     "updated_at": "2026-09-23T22:44:59Z"
-  },
-  {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-22T01:04:50Z"
   },
   {
     "name": "japer-technology.github.io",
