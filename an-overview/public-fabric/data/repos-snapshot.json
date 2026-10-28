@@ -1,45 +1,18 @@
 [
   {
-    "name": "an-overview",
-    "full_name": "japer-technology/an-overview",
-    "html_url": "https://github.com/japer-technology/an-overview",
-    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
-    "homepage": "https://japer-technology.github.io/an-overview",
-    "language": "Python",
+    "name": "forgejo-society-git-labour",
+    "full_name": "japer-technology/forgejo-society-git-labour",
+    "html_url": "https://github.com/japer-technology/forgejo-society-git-labour",
+    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25Forgejo Society Git Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised repositories that include labour.",
+    "homepage": "",
+    "language": "Go",
     "stargazers_count": 0,
-    "fork": false,
+    "fork": true,
     "archived": false,
     "topics": [
-      "github",
-      "public"
+      "forgejo-runner"
     ],
-    "updated_at": "2026-10-25T06:07:12Z"
-  },
-  {
-    "name": "a-one-page-ai-book",
-    "full_name": "japer-technology/a-one-page-ai-book",
-    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
-    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-10-15T22:40:43Z"
-  },
-  {
-    "name": "plus-artificial-intelligence",
-    "full_name": "japer-technology/plus-artificial-intelligence",
-    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
-    "description": "+AI = AI helped. I take responsibility.",
-    "homepage": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-10-05T20:19:49Z"
+    "updated_at": "2026-10-28T04:07:22Z"
   },
   {
     "name": "ubuntu-zombie",
@@ -64,7 +37,49 @@
       "ubuntu-ai",
       "ubuntu-root"
     ],
-    "updated_at": "2026-09-23T23:56:10Z"
+    "updated_at": "2026-10-27T08:52:53Z"
+  },
+  {
+    "name": "a-one-page-ai-book",
+    "full_name": "japer-technology/a-one-page-ai-book",
+    "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
+    "description": "\ud83d\udcd6A single file HTML/JS/CSS application.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-10-27T06:37:27Z"
+  },
+  {
+    "name": "an-overview",
+    "full_name": "japer-technology/an-overview",
+    "html_url": "https://github.com/japer-technology/an-overview",
+    "description": "\ud83d\udee0\ufe0fAn Overview of JAPER Technology's GitHub Repositories",
+    "homepage": "https://japer-technology.github.io/an-overview",
+    "language": "Python",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github",
+      "public"
+    ],
+    "updated_at": "2026-10-26T06:10:04Z"
+  },
+  {
+    "name": "plus-artificial-intelligence",
+    "full_name": "japer-technology/plus-artificial-intelligence",
+    "html_url": "https://github.com/japer-technology/plus-artificial-intelligence",
+    "description": "+AI = AI helped. I take responsibility.",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-10-05T20:19:49Z"
   },
   {
     "name": "github-openclaw-intelligence",
@@ -152,21 +167,6 @@
       "repo-ai"
     ],
     "updated_at": "2026-08-11T22:04:51Z"
-  },
-  {
-    "name": "forgejo-society-git-labour",
-    "full_name": "japer-technology/forgejo-society-git-labour",
-    "html_url": "https://github.com/japer-technology/forgejo-society-git-labour",
-    "description": "\u26a0\ufe0fUNDER DEVELOPMENT \ud83d\udd25Forgejo Society Git Labour is a forge-scale architecture component in which the mind is not a single repository but an entire self-hosted Forgejo instance populated by hundreds of specialised repositories that include labour.",
-    "homepage": "",
-    "language": "Go",
-    "stargazers_count": 0,
-    "fork": true,
-    "archived": false,
-    "topics": [
-      "forgejo-runner"
-    ],
-    "updated_at": "2026-08-11T22:04:17Z"
   },
   {
     "name": "forgejo-society-aw-labour",
