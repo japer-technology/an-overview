@@ -1,5 +1,33 @@
 [
   {
+    "name": "github-minimum-intelligence",
+    "full_name": "japer-technology/github-minimum-intelligence",
+    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
+    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [
+      "github-ai"
+    ],
+    "updated_at": "2026-10-31T22:46:26Z"
+  },
+  {
+    "name": "github-openclaw-intelligence",
+    "full_name": "japer-technology/github-openclaw-intelligence",
+    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
+    "description": "\ud83e\udde0OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
+    "homepage": "",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false,
+    "topics": [],
+    "updated_at": "2026-10-31T22:46:19Z"
+  },
+  {
     "name": "a-one-page-ai-book",
     "full_name": "japer-technology/a-one-page-ai-book",
     "html_url": "https://github.com/japer-technology/a-one-page-ai-book",
@@ -10,7 +38,7 @@
     "fork": false,
     "archived": false,
     "topics": [],
-    "updated_at": "2026-10-31T01:09:17Z"
+    "updated_at": "2026-10-31T22:05:25Z"
   },
   {
     "name": "an-overview",
@@ -26,7 +54,7 @@
       "github",
       "public"
     ],
-    "updated_at": "2026-10-30T06:06:00Z"
+    "updated_at": "2026-10-31T06:04:46Z"
   },
   {
     "name": "github-society-intelligence",
@@ -98,34 +126,6 @@
     "archived": false,
     "topics": [],
     "updated_at": "2026-10-05T20:19:49Z"
-  },
-  {
-    "name": "github-openclaw-intelligence",
-    "full_name": "japer-technology/github-openclaw-intelligence",
-    "html_url": "https://github.com/japer-technology/github-openclaw-intelligence",
-    "description": "\ud83e\udde0OpenClaw within a repository-local AI framework that plugs into a developer\u2019s existing workflow.",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [],
-    "updated_at": "2026-09-23T22:57:54Z"
-  },
-  {
-    "name": "github-minimum-intelligence",
-    "full_name": "japer-technology/github-minimum-intelligence",
-    "html_url": "https://github.com/japer-technology/github-minimum-intelligence",
-    "description": "\ud83e\udde0Pi within a repository-local AI framework that plugs into a developer\u2019s existing workflow. ",
-    "homepage": "",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "fork": false,
-    "archived": false,
-    "topics": [
-      "github-ai"
-    ],
-    "updated_at": "2026-09-23T22:44:59Z"
   },
   {
     "name": "japer-technology.github.io",
